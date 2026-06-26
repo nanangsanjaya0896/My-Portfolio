@@ -1,0 +1,526 @@
+/* ========================================
+   ORBIT ICON SYSTEM
+======================================== */
+
+@keyframes orbit-rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Orbit wrapper = ukuran foto */
+.orbit-wrapper {
+  position: relative;
+}
+
+/* Orbit path melingkar tepat di tepi foto */
+.orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: orbit-rotate 20s linear infinite;
+  pointer-events: none;
+}
+
+/* Icon positioning di tepi orbit (lebih besar) */
+.orbit-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40px;          /* 32px → 40px */
+  height: 40px;         /* 32px → 40px */
+  margin-top: -20px;    /* setengah dari 40 */
+  margin-left: -20px;   /* setengah dari 40 */
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+  padding: 5px;         /* sedikit lebih besar */
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon besar, boleh sedikit keluar orbit */
+.orbit-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 64px;          /* sangat besar desktop */
+  height: 64px;
+  margin-top: -32px;    /* setengah dari 64 */
+  margin-left: -32px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.22);
+  padding: 8px;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Mobile: masih besar tapi sedikit diperkecil */
+@media (max-width: 768px) {
+  .orbit-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    padding: 6px;
+  }
+}
+
+
+/* Sudut awal tiap orbit + speed berbeda */
+.orbit-1 { transform: rotate(0deg);    animation-duration: 18s; }
+.orbit-2 { transform: rotate(60deg);   animation-duration: 20s; }
+.orbit-3 { transform: rotate(120deg);  animation-duration: 22s; }
+.orbit-4 { transform: rotate(180deg);  animation-duration: 24s; }
+.orbit-5 { transform: rotate(240deg);  animation-duration: 26s; }
+.orbit-6 { transform: rotate(300deg);  animation-duration: 28s; }
+
+/* Responsif mobile: tetap lebih besar tapi sedikit dikurangi */
+@media (max-width: 768px) {
+  .orbit-icon {
+    width: 34px;         /* 28px → 34px */
+    height: 34px;
+    margin-top: -17px;   /* setengah dari 34 */
+    margin-left: -17px;
+    padding: 4px;
+  }
+}
+
+
+.bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+}
+.dark .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+.preserve-3d { transform-style: preserve-3d; }
+.perspective-1000 { perspective: 1000px; }
+.backface-hidden { backface-visibility: hidden; }
+.parallax-img { will-change: transform; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+#preloader {
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.6s;
+}
+#preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Toast Animation */
+.toast-enter {
+    transform: translateY(100%) scale(0.9);
+    opacity: 0;
+}
+.toast-enter-active {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.toast-exit {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+.toast-exit-active {
+    transform: translateY(20px) scale(0.9);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+*:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 4px;
+}
+
+/* Filter Button Active State */
+.filter-btn.active {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+.dark .filter-btn.active {
+    color: white;
+}
+
+/* Spotlight & Hover Effects */
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+}
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+}
+.dark .spotlight-card:hover {
+    box-shadow: 0 20px 40px -10px rgba(255,255,255,0.05);
+}
+.spotlight-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(37, 99, 235, 0.1), transparent 40%);
+    z-index: 20;
+}
+.spotlight-card:hover .spotlight-overlay {
+    opacity: 1;
+}
+
+/* Modern Scroll Reveal */
+.reveal-on-scroll {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(30px) scale(0.95);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, filter, transform;
+}
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+}
+
+/* Stagger Delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Magnetic Button Effect Base Class */
+.magnetic-btn {
+    display: inline-block;
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* ===== HERO SECTION ANIMATIONS ===== */
+@keyframes heroFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes badgeReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.95);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes heroHeadingReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes profileImageEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.85) rotateY(20deg);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes circleRotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(90deg) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 20px rgba(37, 99, 235, 0.4));
+    }
+    50% {
+        filter: drop-shadow(0 0 40px rgba(37, 99, 235, 0.6));
+    }
+}
+
+@keyframes buttonScaleIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Hero Badge Animation */
+.hero-badge {
+    animation: badgeReveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: 0.1s;
+}
+
+/* Hero Heading Lines Animation */
+.hero-heading-line {
+    animation: heroHeadingReveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+.hero-heading-line:nth-child(1) { animation-delay: 0.2s; }
+.hero-heading-line:nth-child(2) { animation-delay: 0.35s; }
+.hero-heading-line:nth-child(3) { animation-delay: 0.5s; }
+
+/* Hero Paragraph Animation */
+.hero-description {
+    animation: heroFadeInUp 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: 0.65s;
+    opacity: 0;
+}
+
+/* Hero Buttons Container Animation */
+.hero-buttons {
+    animation: heroFadeInUp 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+/* Hero Image Container Animation */
+.hero-image-container {
+    animation: profileImageEnter 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+    perspective: 1000px;
+}
+
+/* Circular Elements Animation */
+.hero-circle-outer {
+    animation: circleRotateIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.hero-circle-middle {
+    animation: circleRotateIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-direction: reverse;
+}
+
+/* Profile Image Glow Effect */
+.hero-image-glow {
+    animation: glowPulse 3s ease-in-out infinite;
+    animation-delay: 1.4s;
+}
+
+/* Hero Profile Image */
+.hero-profile-img {
+    animation: profileImageEnter 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: 0.4s;
+}
+/* Base: buat body lebih enak dibaca di semua device */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Container global kalau ada */
+.container,
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* NAVBAR */
+header,
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Default desktop biarkan seperti sekarang, kita fokus mobile */
+
+/* ========================= */
+/* Tablet & HP (<= 768px)    */
+/* ========================= */
+@media (max-width: 768px) {
+
+  /* Layout umum */
+  section {
+    padding: 48px 16px;
+  }
+
+  /* Hero section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-buttons a,
+  .hero-buttons button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Navbar menu jadi stack (kalau sekarang inline) */
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  /* Grid skill / project jadi 1 kolom */
+  .skills-grid,
+  .projects-grid,
+  .writing-grid,
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Card */
+  .card,
+  .project-card,
+  .writing-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  /* Typography */
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+
+  /* Section title kecil */
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* Contact form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* ========================= */
+/* HP kecil (<= 480px)       */
+/* ========================= */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero-subtitle {
+    font-size: 13px;
+  }
+
+  /* Kurangi padding biar tidak terlalu sempit */
+  section {
+    padding: 32px 12px;
+  }
+
+  /* Tombol WhatsApp floating kalau ada */
+  .wa-floating {
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+  }
+}
