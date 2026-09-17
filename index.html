@@ -3,848 +3,324 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servis & Cuci AC Rumah di Karawang — AC Kembali Dingin, Rumah Tetap Bersih | Karawang Sejuk</title>
-  <meta name="description" content="Spesialis servis & cuci AC rumahan di Karawang. Teknisi datang tepat waktu, kerja bersih pakai cover anti-cipratan, harga transparan & garansi 7 hari. Cover Telukjambe, Galuh Mas, Klari, Cikampek, Resinda. Chat WA sekarang.">
-  <meta name="keywords" content="servis AC Karawang, cuci AC Karawang, tukang AC Karawang, servis AC rumah, cuci AC rumah Karawang">
+  <title>Servis & Cuci AC Rumah di Karawang — AC Kembali Dingin | Karawang Sejuk</title>
+  <meta name="description" content="Spesialis cuci & servis AC rumah di Karawang. Datang tepat waktu, kerja bersih, harga jelas, garansi 7 hari. Cover Telukjambe, Galuh Mas, Klari, Cikampek.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], display: ['"Space Grotesk"', 'sans-serif'], hand: ['Caveat', 'cursive'] },
-          colors: {
-            navy: '#0B1D3A',
-            ink: '#0F2340',
-            cyanbrand: '#0EA5E9',
-            tealbrand: '#06B6D4',
-            accent: '#FF7A00',
-            accentHover: '#E66E00',
-            sand: '#FFF8F0',
-            line: '#E2E8F0'
-          },
-          boxShadow: { 'soft': '0 20px 60px -20px rgba(15,35,64,0.15)', 'card': '0 10px 30px -12px rgba(15,35,64,0.12)' }
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], display: ['"Space Grotesk"', 'sans-serif'], hand: ['Caveat','cursive'] },
+          colors: { navy:'#0B1D3A', ink:'#0F2340', cyanbrand:'#0EA5E9', tealbrand:'#06B6D4', accent:'#FF7A00', accentHover:'#E66E00', sand:'#FFF8F0' },
+          boxShadow: { soft:'0 20px 60px -20px rgba(15,35,64,0.15)', card:'0 10px 30px -12px rgba(15,35,64,0.12)' }
         }
       }
     }
   </script>
   <style>
-    *{scroll-behavior:smooth}
-    .reveal{opacity:0;transform:translateY(18px);transition:all .7s cubic-bezier(.2,.8,.2,1)}
+    .reveal{opacity:0;transform:translateY(14px);transition:all .6s cubic-bezier(.2,.8,.2,1)}
     .reveal.is-visible{opacity:1;transform:translateY(0)}
-    .delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}
-    .glass{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
-    .noise{position:relative}
-    .noise:after{content:"";position:absolute;inset:0;opacity:.04;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-    .faq-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
-    .faq-item.open .faq-content{max-height:600px}
+    .faq-content{max-height:0;overflow:hidden;transition:max-height .3s ease}
+    .faq-item.open .faq-content{max-height:400px}
     .faq-item.open .faq-icon{transform:rotate(180deg)}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-    @keyframes pingSlow{75%,100%{transform:scale(1.8);opacity:0}}
   </style>
-
-  <!-- Meta Pixel / GA4 placeholder - ganti ID Anda -->
-  <!--
-  <script>
-    // GA4
-    // gtag('event', 'click_wa', { ... })
-    // Meta Pixel
-    // fbq('track', 'Lead')
-  </script>
-  -->
 </head>
 <body class="bg-white text-slate-800 antialiased selection:bg-cyanbrand selection:text-white">
 
   <!-- Topbar -->
-  <div class="w-full bg-ink text-white text-[11px] md:text-xs tracking-wide">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6 py-2.5 flex flex-wrap gap-2 justify-between items-center">
-      <div class="flex items-center gap-2.5">
-        <span class="hidden md:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-white/15"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Buka tiap hari 08.00–20.00 • Minggu tetap buka</span>
-        <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-cyanbrand"></i> Cover: Karawang Barat/Timur • Telukjambe • Klari • Cikampek • Purwasari • Kosambi</span>
-      </div>
-      <a href="tel:+6281223456789" class="inline-flex items-center gap-1.5 font-semibold hover:text-cyanbrand transition"><i class="fa-solid fa-phone"></i> 0812-2345-6789</a>
+  <div class="bg-ink text-white text-[11px] md:text-xs">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6 py-2 flex justify-between gap-2">
+      <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-cyanbrand"></i> Karawang Barat/Timur • Telukjambe • Klari • Cikampek</span>
+      <a href="tel:+6281223456789" class="font-bold hover:text-cyanbrand"><i class="fa-solid fa-phone"></i> 0812-2345-6789</a>
     </div>
   </div>
 
   <!-- Nav -->
-  <header id="navbar" class="sticky top-0 z-40 bg-white/85 glass border-b border-slate-100">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6 h-[64px] md:h-[70px] flex items-center justify-between gap-6">
-      <a href="#home" class="flex items-center gap-3 shrink-0">
-        <div class="w-10 h-10 rounded-xl bg-ink flex items-center justify-center text-white shadow-soft">
-          <i class="fa-regular fa-snowflake text-[18px]"></i>
-        </div>
+  <header id="navbar" class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6 h-[64px] flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-ink text-white grid place-items-center"><i class="fa-regular fa-snowflake"></i></div>
         <div class="leading-tight">
-          <div class="font-display font-bold text-[17px] tracking-tight text-ink -mb-0.5">KARAWANG SEJUK</div>
-          <div class="text-[11px] font-semibold tracking-widest text-slate-500 uppercase">Spesialis AC Rumahan</div>
+          <div class="font-display font-bold text-[16px] text-ink -mb-0.5">KARAWANG SEJUK</div>
+          <div class="text-[10px] font-bold tracking-widest text-slate-500">SPESIALIS AC RUMAHAN</div>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
-        <a href="#layanan" class="hover:text-ink transition">Layanan</a>
-        <a href="#testimoni" class="hover:text-ink transition">Testimoni</a>
-        <a href="#bonus" class="hover:text-ink transition">Bonus</a>
-        <a href="#faq" class="hover:text-ink transition">FAQ</a>
-        <a href="#kontak" class="hidden xl:inline-flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 hover:bg-slate-200 transition"><i class="fa-solid fa-circle-info text-slate-400"></i> Cara Kerja</a>
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+        <a href="#layanan" class="hover:text-ink">Layanan</a>
+        <a href="#testimoni" class="hover:text-ink">Testimoni</a>
+        <a href="#bonus" class="hover:text-ink">Bonus</a>
+        <a href="#faq" class="hover:text-ink">FAQ</a>
       </nav>
       <div class="flex items-center gap-2">
-        <a href="tel:+6281223456789" class="hidden md:inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-slate-200 font-bold text-sm hover:border-ink hover:text-ink transition">
-          <i class="fa-solid fa-phone text-cyanbrand"></i> Telepon
-        </a>
-        <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20tanya%20jadwal%20cuci%20AC%20di%20%5Bperumahan%2Farea%5D%20untuk%20%5Bjumlah%20unit%5D%20unit.%20Keluhan%3A%20%5BAC%20kurang%20dingin%2Fbau%2Fbocor%5D.%20Merek%20AC%3A%20..." target="_blank" rel="noopener" data-cta="nav_wa" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold text-sm shadow-[0_8px_20px_-8px_rgba(255,122,0,0.6)] transition">
-          <i class="fa-brands fa-whatsapp text-[18px]"></i> <span class="hidden sm:inline">Chat WhatsApp</span><span class="sm:hidden">WA</span>
-        </a>
-        <button id="menuBtn" class="lg:hidden w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center"><i class="fa-solid fa-bars"></i></button>
+        <a href="tel:+6281223456789" class="hidden md:inline-flex px-4 py-2.5 rounded-full border border-slate-200 font-bold text-sm">Telepon</a>
+        <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20booking%20cuci%20AC%20di%20%5Balamat%5D%20__%20unit" target="_blank" data-cta="nav_wa" class="px-5 py-2.5 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold text-sm flex items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Chat WA</a>
+        <button id="menuBtn" class="lg:hidden w-9 h-9 rounded-full border border-slate-200 grid place-items-center"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
-    <!-- mobile drawer -->
-    <div id="mobileNav" class="lg:hidden hidden border-t border-slate-100 bg-white">
-      <div class="px-4 py-4 flex flex-col gap-3 text-sm font-semibold">
-        <a href="#layanan" class="py-2">Layanan & Harga</a>
-        <a href="#testimoni" class="py-2">Testimoni Warga</a>
-        <a href="#bonus" class="py-2">Bonus Pelanggan Baru</a>
-        <a href="#faq" class="py-2">FAQ</a>
-        <a href="#kontak" class="py-2">Cara Kerja</a>
-        <div class="grid grid-cols-2 gap-3 pt-2">
-          <a href="tel:+6281223456789" class="text-center py-3 rounded-xl border border-slate-200 font-bold">Telepon</a>
-          <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20booking%20cuci%20AC%20rumah%20di%20..." target="_blank" class="text-center py-3 rounded-xl bg-accent text-white font-bold">Chat WA</a>
-        </div>
-      </div>
+    <div id="mobileNav" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 py-3 space-y-2 text-sm font-semibold">
+      <a href="#layanan" class="block py-2">Layanan</a>
+      <a href="#testimoni" class="block py-2">Testimoni</a>
+      <a href="#bonus" class="block py-2">Bonus</a>
+      <a href="#faq" class="block py-2">FAQ</a>
     </div>
   </header>
 
   <!-- HERO -->
-  <section id="home" class="relative overflow-hidden bg-sand">
-    <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute -top-32 -right-32 w-[720px] h-[720px] bg-cyanbrand/10 rounded-full blur-3xl"></div>
-      <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-tealbrand/10 rounded-full blur-3xl"></div>
-      <div class="absolute inset-0 opacity-[0.035]" style="background-image: radial-gradient(#0B1D3A 1px, transparent 1px); background-size: 22px 22px;"></div>
-    </div>
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6 relative">
-      <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-8 lg:gap-10 items-center py-8 md:py-12 lg:py-10">
-        <!-- left -->
-        <div class="order-2 lg:order-1 pt-2">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-bold tracking-wide reveal">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            SLOT HARI INI TERSEDIA • Telukjambe – Galuh Mas – Klari – Cikampek
-            <span class="hidden sm:inline-flex ml-1 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Respon < 30 menit</span>
-          </div>
-
-          <h1 class="font-display font-bold leading-[0.95] tracking-tight text-ink mt-4 reveal delay-1 text-[34px] sm:text-[42px] lg:text-[52px]">
-            Servis & Cuci AC<br>
-            Rumah di Karawang —<br>
-            <span class="relative inline-block">
-              <span class="relative z-10 bg-gradient-to-r from-cyanbrand to-tealbrand bg-clip-text text-transparent">AC Kembali Dingin,</span>
-              <span class="absolute bottom-1 left-0 right-0 h-3 bg-cyanbrand/15 -rotate-1"></span>
-            </span><br>
-            Rumah Tetap Bersih.
-          </h1>
-
-          <p class="text-[15px] md:text-[16.5px] leading-relaxed text-slate-600 mt-4 max-w-[560px] reveal delay-2">
-            Teknisi Karawang datang ke rumah Anda — <span class="font-semibold text-ink">harga jelas di awal, kerja rapi pakai cover & terpal</span>, tidak bikin lantai berantakan. Cocok untuk AC Daikin, Panasonic, LG, Sharp, Samsung di rumah cluster, perumahan & ruko.
-            <span class="hidden md:inline"> Garansi 7 hari kalau habis servis masih netes / kurang dingin.</span>
-          </p>
-
-          <!-- hero CTAs -->
-          <div class="flex flex-col sm:flex-row gap-3 mt-6 reveal delay-2">
-            <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20saya%20mau%20booking%20cuci%20AC%20rumah%20di%20Karawang.%20Alamat%3A%20%5Bperumahan%2Fcluster%5D%20%2C%20jumlah%20AC%3A%20__%20unit.%20Merek%3A%20__%20Keluhan%3A%20__%20Minta%20jadwal%20besok%20ya%20kak." target="_blank" rel="noopener" data-cta="hero_wa" class="group inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold text-[15px] shadow-[0_14px_30px_-12px_rgba(255,122,0,0.7)] transition">
-              <i class="fa-brands fa-whatsapp text-[22px]"></i> Chat WhatsApp Sekarang
-              <span class="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-0.5 transition"><i class="fa-solid fa-arrow-right text-xs"></i></span>
-            </a>
-            <a href="tel:+6281223456789" data-cta="hero_call" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white border border-slate-200 font-bold text-ink hover:border-ink transition">
-              <span class="w-9 h-9 rounded-full bg-slate-900 text-white flex items-center justify-center"><i class="fa-solid fa-phone text-sm"></i></span>
-              0812-2345-6789
-            </a>
-          </div>
-          <div class="flex items-center gap-2 mt-3 text-xs text-slate-500 reveal delay-3">
-            <i class="fa-regular fa-clock"></i> Balas chat rata-rata 12 menit • Bisa jadwal besok pagi / sore
-          </div>
-
-          <!-- social proof atas (hero) -->
-          <div class="mt-6 bg-white rounded-2xl border border-slate-200 p-3 sm:p-4 flex flex-wrap gap-4 items-center shadow-card reveal delay-3">
-            <div class="flex items-center gap-3">
-              <div class="flex -space-x-2">
-                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=80&h=80&q=80" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&h=80&q=80" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&h=80&q=80" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
-              </div>
-              <div class="leading-tight">
-                <div class="font-extrabold text-ink text-sm">300+ unit AC rumah</div>
-                <div class="text-xs text-slate-500">sudah kami tangani 12 bulan terakhir di Karawang</div>
-              </div>
-            </div>
-            <div class="h-10 w-px bg-slate-200 hidden sm:block"></div>
-            <div class="flex items-center gap-2">
-              <div class="flex text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-              <div class="leading-tight">
-                <div class="font-bold text-ink text-sm">4.9/5 <span class="font-normal text-slate-500">• 127 ulasan Google</span></div>
-                <div class="text-[11px] text-slate-500">“Teknisi datang jam 9 pas, selesai rumah tetap rapi.”</div>
-              </div>
-            </div>
-            <div class="ml-auto hidden md:flex items-center gap-2 text-xs font-semibold text-slate-600">
-              <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Grand Taruma</span>
-              <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Galuh Mas</span>
-              <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Resinda</span>
-            </div>
-          </div>
-
-          <!-- trust micro -->
-          <div class="flex flex-wrap gap-2 mt-3 text-[11px] font-semibold text-slate-600 reveal">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200"><i class="fa-solid fa-shield-halved text-emerald-500"></i> Garansi 7 hari</span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200"><i class="fa-solid fa-droplet-slash text-cyanbrand"></i> Cover anti-cipratan</span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200"><i class="fa-solid fa-receipt text-amber-500"></i> Harga di awal, no nambah diam-diam</span>
-          </div>
+  <section id="home" class="bg-sand relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-[520px] h-[520px] bg-cyanbrand/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6 py-8 md:py-10 grid lg:grid-cols-[1.05fr_.9fr] gap-8 items-center">
+      <div class="order-2 lg:order-1">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Slot hari ini • Respon &lt;30 menit</div>
+        <h1 class="font-display font-bold text-ink leading-[0.95] mt-3 text-[32px] sm:text-[42px] lg:text-[48px]">
+          Servis & Cuci AC<br>Rumah di Karawang —<br><span class="bg-gradient-to-r from-cyanbrand to-tealbrand bg-clip-text text-transparent">AC Kembali Dingin,</span><br>Rumah Tetap Bersih.
+        </h1>
+        <p class="text-[15px] text-slate-600 mt-3 max-w-[520px]">Teknisi lokal datang tepat waktu. Harga jelas di awal, kerja rapi pakai cover, garansi 7 hari. Untuk Daikin, Panasonic, LG, Sharp, Samsung.</p>
+        <div class="flex flex-col sm:flex-row gap-3 mt-6">
+          <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20booking%20cuci%20AC%20di%20%5Balamat%5D%20__%20unit" target="_blank" data-cta="hero_wa" class="inline-flex justify-center items-center gap-2 px-7 py-4 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold">Chat WhatsApp Sekarang <i class="fa-brands fa-whatsapp text-lg"></i></a>
+          <a href="tel:+6281223456789" class="inline-flex justify-center items-center gap-2 px-7 py-4 rounded-full bg-white border border-slate-200 font-bold text-ink">0812-2345-6789</a>
         </div>
-
-        <!-- right visual -->
-        <div class="order-1 lg:order-2 relative reveal">
-          <!-- main image card - asymmetrical -->
-          <div class="relative">
-            <div class="absolute -top-4 -right-2 md:right-6 bg-white rounded-2xl shadow-soft border border-slate-200 p-3 flex items-center gap-3 z-20">
-              <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center"><i class="fa-solid fa-check"></i></div>
-              <div>
-                <div class="text-xs font-bold text-ink leading-none">Jadwal Hari Ini</div>
-                <div class="text-[11px] text-slate-500">3 slot tersisa • 14.00 / 16.00 / 19.00</div>
-              </div>
-            </div>
-
-            <div class="rounded-[28px] overflow-hidden bg-ink p-2 md:p-3 shadow-soft">
-              <div class="rounded-[22px] overflow-hidden bg-white relative">
-                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&h=1100&q=80" alt="Teknisi cuci AC rumah di Karawang" class="w-full h-[380px] md:h-[520px] object-cover">
-                <div class="absolute bottom-0 inset-x-0 p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/20 to-transparent">
-                  <div class="flex items-end justify-between gap-3 text-white">
-                    <div>
-                      <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/15 border border-white/20 text-[11px] font-bold tracking-wide backdrop-blur">TEKNISI KARAWANG SEJUK • PAKAI COVER & TERPAL</div>
-                      <div class="font-display font-bold text-lg md:text-xl leading-none mt-2">Kerja bersih, lantai dipel lagi<br>sebelum pulang.</div>
-                    </div>
-                    <div class="hidden md:flex w-12 h-12 rounded-full bg-white text-ink items-center justify-center shrink-0"><i class="fa-solid fa-play"></i></div>
-                  </div>
-                </div>
-                <!-- floating proof -->
-                <div class="absolute top-4 left-4 bg-white/95 backdrop-blur rounded-xl px-3 py-2.5 shadow-soft border border-slate-200 flex items-center gap-2.5">
-                  <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=80&h=80&q=80" class="w-9 h-9 rounded-full object-cover" alt="">
-                  <div class="leading-tight">
-                    <div class="text-xs font-bold text-ink">Bu Sinta — Galuh Mas</div>
-                    <div class="text-[11px] text-slate-500">“AC nggak bau lagi, teknisi jujur nggak maksa isi freon.”</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- bottom mini stats - off-grid -->
-            <div class="grid grid-cols-3 gap-3 mt-3">
-              <div class="bg-white rounded-2xl border border-slate-200 p-3 text-center shadow-card">
-                <div class="text-xl font-extrabold text-ink">4–6 <span class="text-sm font-bold">Bulan</span></div>
-                <div class="text-[11px] font-semibold text-slate-500 leading-tight">rata-rata pelanggan cuci rutin, AC tetap dingin</div>
-              </div>
-              <div class="bg-ink text-white rounded-2xl p-3 text-center">
-                <div class="text-xl font-extrabold">45<span class="text-sm"> menit</span></div>
-                <div class="text-[11px] opacity-80 leading-tight">waktu pengerjaan per unit paket Lengkap</div>
-              </div>
-              <div class="bg-white rounded-2xl border border-slate-200 p-3 text-center shadow-card">
-                <div class="text-xl font-extrabold text-ink">2 Jam</div>
-                <div class="text-[11px] font-semibold text-slate-500 leading-tight">paket keluarga 3 AC, rumah tetap rapi</div>
-              </div>
-            </div>
-          </div>
+        <!-- social proof -->
+        <div class="mt-5 bg-white rounded-2xl border border-slate-200 p-3 flex flex-wrap gap-3 items-center text-xs">
+          <span class="font-extrabold text-ink">300+ unit</span><span class="text-slate-500">12 bulan terakhir</span>
+          <span class="w-px h-6 bg-slate-200 hidden sm:block"></span>
+          <span class="text-amber-400"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <span class="font-bold text-ink">4.9/5</span><span class="text-slate-500">127 ulasan</span>
+          <span class="ml-auto hidden md:flex gap-1.5 font-semibold"><span class="px-2 py-1 rounded-full bg-slate-50 border border-slate-200">Galuh Mas</span><span class="px-2 py-1 rounded-full bg-slate-50 border border-slate-200">Resinda</span></span>
         </div>
       </div>
-
-      <!-- kecamatan strip -->
-      <div class="pb-6 md:pb-8">
-        <div class="rounded-2xl bg-white border border-slate-200 px-4 py-3 flex flex-wrap gap-2 items-center text-xs">
-          <span class="font-bold text-ink flex items-center gap-1.5"><i class="fa-solid fa-map-location-dot text-cyanbrand"></i> Area langganan kami:</span>
-          <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Karawang Barat</span>
-          <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Karawang Timur</span>
-          <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Telukjambe Timur/Barat</span>
-          <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Klari</span>
-          <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Cikampek</span>
-          <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Purwasari</span>
-          <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200 hidden md:inline-flex">Kosambi</span>
-          <span class="ml-auto text-[11px] text-slate-500 hidden md:inline">Tanpa biaya datang untuk area di atas • Luar area tanya WA dulu ya</span>
+      <div class="order-1 lg:order-2 relative">
+        <div class="rounded-[26px] bg-ink p-2 shadow-soft">
+          <div class="rounded-[20px] overflow-hidden bg-white relative">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&h=1000&q=80" alt="Teknisi AC Karawang" class="w-full h-[360px] md:h-[460px] object-cover">
+            <div class="absolute top-3 left-3 bg-white/95 rounded-xl px-3 py-2 text-xs font-bold shadow flex items-center gap-2"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=80&h=80&q=80" class="w-7 h-7 rounded-full object-cover"> Bu Sinta — “Nggak bau lagi, jujur freon”</div>
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
+              <div class="text-[11px] font-bold tracking-wide bg-white/15 inline-flex px-2 py-1 rounded-full border border-white/20">PAKAI COVER & TERPAL</div>
+              <div class="font-bold leading-tight mt-1">Kerja bersih, lantai dipel lagi.</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-2 mt-3 text-center text-xs">
+          <div class="bg-white border border-slate-200 rounded-2xl p-2.5"><div class="font-extrabold text-ink text-[15px]">4–6 Bln</div><div class="text-slate-500">cuci rutin</div></div>
+          <div class="bg-ink text-white rounded-2xl p-2.5"><div class="font-extrabold text-[15px]">45 Menit</div><div class="opacity-70">per unit Lengkap</div></div>
+          <div class="bg-white border border-slate-200 rounded-2xl p-2.5"><div class="font-extrabold text-ink text-[15px]">Garansi</div><div class="text-slate-500">7 hari</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROBLEM IDENTIFICATION -->
-  <section class="py-10 md:py-14 bg-white border-y border-slate-100">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="grid lg:grid-cols-[420px_1fr] gap-8 lg:gap-10 items-start">
-        <div class="lg:sticky lg:top-[86px]">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold tracking-wide reveal">KENAPA AC RUMAH SERING BERMASALAH?</div>
-          <h2 class="font-display text-[28px] md:text-[34px] font-bold leading-tight text-ink mt-3 reveal">AC Sudah Dicuci Tapi<br>Seminggu Panas Lagi?</h2>
-          <p class="text-slate-600 text-[15px] leading-relaxed mt-3 reveal">Ini keluhan yang paling sering kami dengar dari ibu-ibu di Grand Taruma, Resinda & Galuh Mas. Bukan AC-nya jelek — biasanya ada yang kelewat pas servis sebelumnya.</p>
-          <div class="mt-5 bg-sand rounded-2xl border border-amber-100 p-4 flex gap-3 reveal">
-            <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center shrink-0"><i class="fa-solid fa-triangle-exclamation text-amber-500"></i></div>
-            <div class="text-sm leading-relaxed">
-              <div class="font-bold text-ink">Cerita nyata:</div>
-              <div class="text-slate-600">“AC kamar anak tiap malam bau apek, sudah panggil tukang beda, besoknya bau lagi.” — Ibu Dina, Grand Taruma. Ternyata evaporator berlendir & drain mampet, cuma disemprot luarnya saja.</div>
-            </div>
-          </div>
-          <a href="https://wa.me/6281223456789?text=Halo%20kak%2C%20AC%20saya%20keluhannya%20..." target="_blank" data-cta="problem_wa" class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-cyanbrand hover:text-ink transition reveal">Cek AC saya dulu, gratis konsultasi WA <i class="fa-solid fa-arrow-right"></i></a>
+  <!-- PROBLEM -->
+  <section class="py-10 bg-white border-y border-slate-100">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-ink">AC Sudah Dicuci Tapi Cepat Panas Lagi?</h2>
+        <p class="text-sm text-slate-600 mt-2">Keluhan paling sering di Grand Taruma & Resinda. Biasanya bukan AC rusak — cuma kurang tuntas.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <div class="w-9 h-9 rounded-xl bg-ink text-white grid place-items-center"><i class="fa-solid fa-wind text-sm"></i></div>
+          <h3 class="font-bold text-ink mt-3 text-sm">Angin doang, nggak dingin</h3>
+          <p class="text-xs text-slate-600 mt-1">Filter & evaporator berdebu tebal. Listrik naik, ruangan tetap gerah.</p>
         </div>
-
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div class="group bg-white rounded-[20px] border border-slate-200 p-5 hover:border-ink hover:shadow-soft transition reveal">
-            <div class="w-11 h-11 rounded-xl bg-slate-900 text-white flex items-center justify-center"><i class="fa-solid fa-wind"></i></div>
-            <h3 class="font-bold text-ink mt-3">Angin doang, nggak dingin walau sudah 16°C</h3>
-            <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Filter & evaporator ketutup debu tebal. AC kerja ngoyo, listrik naik 200–300rb tapi ruangan tetap gerah.</p>
-            <div class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200"><span class="w-2 h-2 rounded-full bg-amber-500"></span> Sering di AC ½ – 1 PK yang jarang dicuci >6 bulan</div>
-          </div>
-          <div class="group bg-white rounded-[20px] border border-slate-200 p-5 hover:border-ink hover:shadow-soft transition reveal delay-1">
-            <div class="w-11 h-11 rounded-xl bg-cyanbrand text-white flex items-center justify-center"><i class="fa-solid fa-face-dizzy"></i></div>
-            <h3 class="font-bold text-ink mt-3">Bau apek / asam tiap AC nyala</h3>
-            <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Jamur & lendir di talang air indoor. Anak jadi batuk pilek, apalagi kalau AC nyala semalaman di kamar.</p>
-            <div class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200"><span class="w-2 h-2 rounded-full bg-rose-500"></span> Kasus terbanyak di Telukjambe dekat jalan besar</div>
-          </div>
-          <div class="group bg-white rounded-[20px] border border-slate-200 p-5 hover:border-ink hover:shadow-soft transition reveal">
-            <div class="w-11 h-11 rounded-xl bg-tealbrand text-white flex items-center justify-center"><i class="fa-solid fa-droplet"></i></div>
-            <h3 class="font-bold text-ink mt-3">Air netes dari indoor, tembok lembab</h3>
-            <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Selang drain mampet lumut. Kalau dibiarkan, cat ngelupas & plafon berjamur. Kami flushing sampai lancar.</p>
-            <div class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200"><span class="w-2 h-2 rounded-full bg-cyanbrand"></span> Cek gratis tiap cuci Lengkap</div>
-          </div>
-          <div class="group bg-white rounded-[20px] border border-slate-200 p-5 hover:border-ink hover:shadow-soft transition reveal delay-1">
-            <div class="w-11 h-11 rounded-xl bg-amber-500 text-white flex items-center justify-center"><i class="fa-solid fa-broom"></i></div>
-            <h3 class="font-bold text-ink mt-3">Habis cuci, rumah malah kotor cipratan</h3>
-            <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Banyak yang kapok karena lantai & sofa kena semprot. Kami pakai cover plastik + terpal, selesai dipel lagi.</p>
-            <div class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700"><i class="fa-solid fa-check text-[10px]"></i> Janji: rumah tetap rapi</div>
-          </div>
-          <div class="sm:col-span-2 bg-ink rounded-[20px] p-5 md:p-6 text-white flex flex-col md:flex-row gap-4 items-start md:items-center justify-between reveal">
-            <div class="flex gap-3">
-              <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-comments"></i></div>
-              <div>
-                <div class="font-bold leading-tight">Takut ditipu “harus tambah freon” padahal nggak perlu?</div>
-                <div class="text-sm opacity-80 leading-relaxed">Kami cek pakai manifold & tang ampere di depan Anda. Kalau tekanan 140–160 psi (R32) masih aman, kami bilang aman — nggak maksa isi.</div>
-              </div>
-            </div>
-            <a href="https://wa.me/6281223456789?text=Halo%20kak%2C%20mau%20tanya%20soal%20freon%20AC%20..." target="_blank" class="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white text-ink font-bold">Tanya dulu di WA <i class="fa-solid fa-arrow-right text-xs"></i></a>
-          </div>
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <div class="w-9 h-9 rounded-xl bg-cyanbrand text-white grid place-items-center"><i class="fa-solid fa-face-dizzy text-sm"></i></div>
+          <h3 class="font-bold text-ink mt-3 text-sm">Bau apek tiap nyala</h3>
+          <p class="text-xs text-slate-600 mt-1">Jamur di talang. Bikin batuk, apalagi di kamar anak.</p>
         </div>
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <div class="w-9 h-9 rounded-xl bg-tealbrand text-white grid place-items-center"><i class="fa-solid fa-droplet text-sm"></i></div>
+          <h3 class="font-bold text-ink mt-3 text-sm">Netes, tembok lembab</h3>
+          <p class="text-xs text-slate-600 mt-1">Drain mampet lumut. Kami flushing sampai lancar.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <div class="w-9 h-9 rounded-xl bg-amber-500 text-white grid place-items-center"><i class="fa-solid fa-broom text-sm"></i></div>
+          <h3 class="font-bold text-ink mt-3 text-sm">Rumah kotor habis cuci</h3>
+          <p class="text-xs text-slate-600 mt-1">Kami pakai cover + terpal, selesai dipel lagi.</p>
+        </div>
+      </div>
+      <div class="mt-4 bg-ink text-white rounded-2xl p-4 flex flex-wrap gap-3 items-center justify-between">
+        <span class="text-sm font-bold">Takut disuruh isi freon terus?</span><span class="text-xs opacity-80">Kami cek manifold di depan Anda. Aman = kami bilang aman.</span>
+        <a href="https://wa.me/6281223456789?text=Halo%20kak%2C%20mau%20tanya%20freon%20..." target="_blank" class="px-5 py-2.5 rounded-full bg-white text-ink font-bold text-sm">Tanya di WA</a>
       </div>
     </div>
   </section>
 
   <!-- OFFER -->
-  <section id="layanan" class="py-10 md:py-14 bg-slate-50">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
-        <div class="reveal">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold tracking-wide">PAKET UNTUK RUMAH, BUKAN UNTUK KANTOR / RUKO BESAR</div>
-          <h2 class="font-display text-[30px] md:text-[36px] font-bold text-ink leading-tight mt-3">Pilih Paket Sesuai<br>Jumlah AC di Rumah</h2>
-          <p class="text-slate-600 text-sm md:text-[15px] mt-2 max-w-[560px]">Harga per unit transparan, tanpa biaya datang untuk area cover. Semua paket sudah termasuk pengecekan freon & ampere — bukan asal semprot.</p>
-        </div>
-        <div class="reveal hidden md:flex items-center gap-2 text-xs font-semibold">
-          <span class="px-3 py-2 rounded-full bg-white border border-slate-200"><i class="fa-solid fa-tag text-amber-500"></i> Paling laris: Paket Lengkap</span>
-          <span class="px-3 py-2 rounded-full bg-emerald-500 text-white">Garansi 7 hari</span>
-        </div>
+  <section id="layanan" class="py-10 bg-slate-50">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-ink">Paket Sesuai Jumlah AC</h2>
+        <span class="text-xs font-bold px-3 py-1.5 rounded-full bg-emerald-500 text-white">Tanpa biaya datang • area cover</span>
       </div>
-
-      <div class="grid lg:grid-cols-3 gap-5 md:gap-6 mt-8">
-        <!-- Paket Hemat -->
-        <div class="bg-white rounded-[24px] border border-slate-200 overflow-hidden hover:shadow-soft transition reveal">
-          <div class="p-6">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <div class="text-xs font-bold tracking-widest text-slate-500">PAKET HEMAT</div>
-                <h3 class="font-display font-bold text-xl text-ink mt-1">Cuci Hemat</h3>
-                <div class="text-sm text-slate-600">Untuk cuci rutin tiap 4 bulan • 1–2 AC</div>
-              </div>
-              <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center"><i class="fa-solid fa-leaf text-emerald-600"></i></div>
-            </div>
-            <div class="mt-5 flex items-baseline gap-2">
-              <div class="text-[30px] font-extrabold text-ink leading-none">Rp75<span class="text-lg">.000</span></div>
-              <div class="text-sm font-semibold text-slate-500">/ unit</div>
-              <span class="ml-auto text-[11px] font-bold px-2 py-1 rounded-full bg-slate-50 border border-slate-200">Mulai</span>
-            </div>
-            <ul class="mt-5 space-y-2.5 text-sm">
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>Cuci filter + evaporator indoor, semprot blower</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>Cek tekanan freon & ampere pakai alat</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>Bersihkan drain sekadarnya, test nyala 10 menit</span></li>
-              <li class="flex gap-2.5 text-slate-500"><i class="fa-solid fa-minus mt-0.5"></i><span>Belum termasuk cuci outdoor detail & flushing talang</span></li>
-            </ul>
-            <div class="mt-4 inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-700 font-semibold"><i class="fa-solid fa-clock"></i> 30–35 menit / unit</div>
-          </div>
-          <div class="px-6 pb-6">
-            <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20pesan%20Paket%20Cuci%20Hemat%20Rp75rb%20untuk%20__%20unit%20di%20%5Balamat%5D.%20Merek%20AC%3A%20__" target="_blank" data-cta="offer_hemat" class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full border-2 border-ink text-ink font-extrabold hover:bg-ink hover:text-white transition">Pesan Paket Hemat <i class="fa-brands fa-whatsapp"></i></a>
-            <div class="text-center text-[11px] text-slate-500 mt-2">Cocok kalau AC masih dingin, cuma debuan</div>
-          </div>
+      <div class="grid lg:grid-cols-3 gap-5 mt-6">
+        <div class="bg-white rounded-[22px] border border-slate-200 p-6">
+          <div class="text-xs font-bold tracking-widest text-slate-500">HEMAT</div>
+          <h3 class="font-bold text-ink text-lg">Cuci Hemat</h3>
+          <div class="flex items-baseline gap-1 mt-2"><span class="text-2xl font-extrabold text-ink">Rp75rb</span><span class="text-sm text-slate-500">/unit</span></div>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Cuci filter + evaporator indoor</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Cek freon & ampere</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Test nyala 10 menit</li>
+          </ul>
+          <div class="text-xs font-semibold mt-3 px-2.5 py-1 rounded-full bg-amber-50 border border-amber-200 inline-flex">30 menit/unit</div>
+          <a href="https://wa.me/6281223456789?text=Halo%20mau%20Paket%20Hemat%20Rp75rb%20__%20unit%20di%20%5Balamat%5D" target="_blank" class="mt-4 w-full py-3 rounded-full border-2 border-ink text-ink font-extrabold flex justify-center">Pesan Hemat</a>
         </div>
-
-        <!-- Paket Lengkap - Popular -->
-        <div class="bg-ink rounded-[24px] border border-ink overflow-hidden shadow-soft relative reveal delay-1 scale-[1.01]">
-          <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-cyanbrand to-tealbrand"></div>
-          <div class="absolute top-4 right-4">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent text-white text-xs font-extrabold shadow"><i class="fa-solid fa-fire"></i> PALING LARIS</span>
-          </div>
-          <div class="p-6 text-white">
-            <div class="text-xs font-bold tracking-widest text-white/70">PAKET LENGKAP • REKOMENDASI</div>
-            <h3 class="font-display font-bold text-xl mt-1">Cuci Lengkap</h3>
-            <div class="text-sm text-white/70">Indoor + Outdoor tuntas • Rumah tetap bersih</div>
-            <div class="mt-5 flex items-baseline gap-2">
-              <div class="text-[30px] font-extrabold leading-none">Rp95<span class="text-lg">.000</span></div>
-              <div class="text-sm font-semibold text-white/70">/ unit</div>
-              <span class="ml-auto text-[11px] font-bold px-2 py-1 rounded-full bg-white/15 border border-white/15">Mulai</span>
-            </div>
-            <ul class="mt-5 space-y-2.5 text-sm text-white/90">
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i><span><span class="font-semibold text-white">Semua fitur Hemat</span> + cuci outdoor dengan jet cleaner</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i><span>Flushing talang & selang drain sampai lancar (anti netes)</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i><span>Semprot anti-jamur evaporator, cek kebocoran pipa</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i><span>Pakai cover plastik + terpal, lantai dipel sebelum pulang</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i><span>Test running 15 menit + foto before-after dikirim WA</span></li>
-            </ul>
-            <div class="mt-4 inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-white/10 border border-white/10 font-semibold"><i class="fa-solid fa-clock"></i> 45–60 menit / unit • Paling banyak dipesan di Galuh Mas & Resinda</div>
-          </div>
-          <div class="px-6 pb-6">
-            <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20pesan%20Paket%20Cuci%20Lengkap%20Rp95rb%20untuk%20__%20unit%20di%20%5Balamat%5D.%20Merek%3A%20__%20Keluhan%3A%20__" target="_blank" data-cta="offer_lengkap" class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold shadow-lg transition">Pesan Paket Lengkap <i class="fa-brands fa-whatsapp text-lg"></i></a>
-            <div class="text-center text-[11px] text-white/60 mt-2">Sudah termasuk garansi 7 hari • Tanpa biaya datang</div>
-          </div>
+        <div class="bg-ink rounded-[22px] p-6 text-white relative overflow-hidden">
+          <span class="absolute top-4 right-4 bg-accent text-white text-xs font-extrabold px-3 py-1 rounded-full">PALING LARIS</span>
+          <div class="text-xs font-bold tracking-widest text-white/60">LENGKAP • REKOMENDASI</div>
+          <h3 class="font-bold text-lg">Cuci Lengkap</h3>
+          <div class="flex items-baseline gap-1 mt-2"><span class="text-2xl font-extrabold">Rp95rb</span><span class="text-sm text-white/60">/unit</span></div>
+          <ul class="mt-4 space-y-2 text-sm text-white/90">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-xs"></i> Semua Hemat + outdoor</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-xs"></i> Flushing drain anti-netes</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-xs"></i> Cover + dipel + foto before-after</li>
+          </ul>
+          <div class="text-xs font-semibold mt-3 px-2.5 py-1 rounded-full bg-white/10 border border-white/15 inline-flex">45–60 menit • Garansi 7 hari</div>
+          <a href="https://wa.me/6281223456789?text=Halo%20mau%20Paket%20Lengkap%20Rp95rb%20__%20unit%20di%20%5Balamat%5D" target="_blank" class="mt-4 w-full py-3 rounded-full bg-accent text-white font-extrabold flex justify-center">Pesan Lengkap</a>
         </div>
-
-        <!-- Paket Keluarga -->
-        <div class="bg-white rounded-[24px] border border-slate-200 overflow-hidden hover:shadow-soft transition reveal delay-2">
-          <div class="p-6">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <div class="text-xs font-bold tracking-widest text-slate-500">PAKET KELUARGA</div>
-                <h3 class="font-display font-bold text-xl text-ink mt-1">3–4 AC Sekaligus</h3>
-                <div class="text-sm text-slate-600">Lebih hemat, jadwal prioritas Sabtu-Minggu</div>
-              </div>
-              <div class="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center"><i class="fa-solid fa-house text-amber-600"></i></div>
-            </div>
-            <div class="mt-5 space-y-2">
-              <div class="flex items-baseline justify-between bg-slate-50 border border-slate-200 rounded-xl px-4 py-3">
-                <div class="text-sm font-semibold text-slate-600">3 unit Lengkap</div>
-                <div class="text-lg font-extrabold text-ink">Rp275.000</div>
-              </div>
-              <div class="flex items-baseline justify-between bg-ink text-white rounded-xl px-4 py-3">
-                <div class="text-sm font-semibold text-white/80">4 unit Lengkap</div>
-                <div class="text-lg font-extrabold">Rp350.000</div>
-              </div>
-            </div>
-            <ul class="mt-5 space-y-2.5 text-sm">
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>Semua fitur Paket Lengkap untuk tiap unit</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>Free cek 1 AC tambahan (tanpa cuci)</span></li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>Prioritas slot Sabtu-Minggu (sering penuh)</span></li>
-            </ul>
-            <div class="mt-4 inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-semibold"><i class="fa-solid fa-stopwatch"></i> Selesai ±2 jam untuk 3 AC</div>
+        <div class="bg-white rounded-[22px] border border-slate-200 p-6">
+          <div class="text-xs font-bold tracking-widest text-slate-500">KELUARGA</div>
+          <h3 class="font-bold text-ink text-lg">3–4 AC Sekaligus</h3>
+          <div class="mt-3 space-y-2">
+            <div class="flex justify-between bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm font-bold"><span>3 AC</span><span>Rp275rb</span></div>
+            <div class="flex justify-between bg-ink text-white rounded-xl px-4 py-2.5 text-sm font-bold"><span>4 AC</span><span>Rp350rb</span></div>
           </div>
-          <div class="px-6 pb-6">
-            <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20pesan%20Paket%20Keluarga%20(3%20AC%20Rp275rb%20%2F%204%20AC%20Rp350rb)%20di%20%5Balamat%5D.%20Merek%3A%20__" target="_blank" data-cta="offer_keluarga" class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-ink text-white font-extrabold hover:bg-slate-900 transition">Ambil Paket Keluarga <i class="fa-brands fa-whatsapp"></i></a>
-            <div class="text-center text-[11px] text-slate-500 mt-2">Pas buat rumah type 36/45 dengan 3–4 AC</div>
-          </div>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Semua fitur Lengkap</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Free cek 1 AC + slot Sabtu prioritas</li>
+          </ul>
+          <a href="https://wa.me/6281223456789?text=Halo%20mau%20Paket%20Keluarga%20di%20%5Balamat%5D" target="_blank" class="mt-4 w-full py-3 rounded-full bg-ink text-white font-extrabold flex justify-center">Ambil Paket Keluarga</a>
         </div>
-      </div>
-
-      <div class="mt-6 bg-white border border-slate-200 rounded-2xl p-4 flex flex-col md:flex-row gap-3 items-start md:items-center justify-between reveal">
-        <div class="flex gap-3">
-          <div class="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0"><i class="fa-solid fa-circle-info text-amber-600"></i></div>
-          <div class="text-sm leading-relaxed">
-            <div class="font-bold text-ink">Harga jujur, nggak ada “jebakan freon”.</div>
-            <div class="text-slate-600">Kalau freon masih aman kami bilang aman. Kalau memang perlu tambah/kuras, kami sebut harga dulu — Anda setuju baru kami kerjakan. Merek yang sering kami tangani: Daikin, Panasonic, LG, Sharp, Samsung, Gree, Midea, Polytron.</div>
-          </div>
-        </div>
-        <a href="https://wa.me/6281223456789?text=Halo%20kak%2C%20mau%20konsultasi%20harga%20dulu%20untuk%20AC%20..." target="_blank" class="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white border border-slate-200 font-bold hover:border-ink transition">Konsultasi dulu di WA</a>
       </div>
     </div>
   </section>
 
-  <!-- FEATURES vs -->
-  <section class="py-10 md:py-14 bg-white">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-8 items-start">
-        <div class="reveal">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-bold tracking-wide">APA YANG KAMI KERJAKAN DI RUMAH ANDA?</div>
-          <h2 class="font-display text-[28px] md:text-[32px] font-bold text-ink leading-tight mt-3">Bukan Cuma Semprot-Semprot.<br>Kami Cek Satu-Satu.</h2>
-          <p class="text-slate-600 text-[15px] mt-2">Biar AC awet & dinginnya balik, bukan cuma bersih luar. Ini checklist teknisi kami — Anda bisa lihat langsung di lokasi.</p>
-
-          <div class="mt-6 grid gap-3">
-            <div class="flex gap-3 p-4 rounded-2xl border border-slate-200 hover:border-cyanbrand/40 hover:bg-cyanbrand/5 transition">
-              <div class="w-11 h-11 rounded-xl bg-ink text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-gauge-high"></i></div>
-              <div>
-                <div class="font-bold text-ink">Cek tekanan freon pakai manifold</div>
-                <div class="text-sm text-slate-600 leading-relaxed">Manifold = alat ukur tekanan freon. Normal R32 di 140–160 psi. Kalau masih segitu, nggak perlu tambah — kami tunjukkan angkanya di alat.</div>
-              </div>
-            </div>
-            <div class="flex gap-3 p-4 rounded-2xl border border-slate-200 hover:border-cyanbrand/40 hover:bg-cyanbrand/5 transition">
-              <div class="w-11 h-11 rounded-xl bg-cyanbrand text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-bolt"></i></div>
-              <div>
-                <div class="font-bold text-ink">Cek ampere kompresor pakai tang ampere</div>
-                <div class="text-sm text-slate-600 leading-relaxed">Ampere tinggi = kompresor ngoyo & boros listrik. Kami cek biar tahu AC masih sehat atau perlu perhatian.</div>
-              </div>
-            </div>
-            <div class="flex gap-3 p-4 rounded-2xl border border-slate-200 hover:border-cyanbrand/40 hover:bg-cyanbrand/5 transition">
-              <div class="w-11 h-11 rounded-xl bg-tealbrand text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-shower"></i></div>
-              <div>
-                <div class="font-bold text-ink">Cuci evaporator & blower, bukan cuma filter</div>
-                <div class="text-sm text-slate-600 leading-relaxed">Evaporator = sirip dingin di indoor. Kalau berlendir, angin nggak tembus. Kami semprot pakai jet cleaner tekanan rendah biar sirip nggak rusak.</div>
-              </div>
-            </div>
-            <div class="flex gap-3 p-4 rounded-2xl border border-slate-200 hover:border-cyanbrand/40 hover:bg-cyanbrand/5 transition">
-              <div class="w-11 h-11 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-house-chimney"></i></div>
-              <div>
-                <div class="font-bold text-ink">Bersihkan outdoor & flushing drain</div>
-                <div class="text-sm text-slate-600 leading-relaxed">Outdoor = kotak di luar rumah. Debu tebal bikin AC panas. Drain = selang buang air. Kami flushing sampai air ngalir lancar, jadi nggak netes lagi.</div>
-              </div>
-            </div>
-          </div>
+  <!-- FEATURES SINGKAT -->
+  <section class="py-10 bg-white">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6 grid lg:grid-cols-2 gap-8">
+      <div>
+        <h2 class="font-display text-2xl font-bold text-ink">Kami cek satu-satu, bukan asal semprot</h2>
+        <div class="mt-5 space-y-3">
+          <div class="flex gap-3 p-4 rounded-2xl border border-slate-200"><div class="w-9 h-9 rounded-xl bg-ink text-white grid place-items-center shrink-0"><i class="fa-solid fa-gauge-high text-sm"></i></div><div><div class="font-bold text-sm">Cek freon pakai manifold</div><div class="text-xs text-slate-600">Normal R32 140–160 psi. Aman = nggak perlu isi.</div></div></div>
+          <div class="flex gap-3 p-4 rounded-2xl border border-slate-200"><div class="w-9 h-9 rounded-xl bg-cyanbrand text-white grid place-items-center shrink-0"><i class="fa-solid fa-bolt text-sm"></i></div><div><div class="font-bold text-sm">Cek ampere</div><div class="text-xs text-slate-600">Tahu kompresor sehat atau ngoyo boros listrik.</div></div></div>
+          <div class="flex gap-3 p-4 rounded-2xl border border-slate-200"><div class="w-9 h-9 rounded-xl bg-tealbrand text-white grid place-items-center shrink-0"><i class="fa-solid fa-shower text-sm"></i></div><div><div class="font-bold text-sm">Cuci evaporator & blower</div><div class="text-xs text-slate-600">Jet cleaner rendah biar sirip nggak rusak.</div></div></div>
+          <div class="flex gap-3 p-4 rounded-2xl border border-slate-200"><div class="w-9 h-9 rounded-xl bg-emerald-500 text-white grid place-items-center shrink-0"><i class="fa-solid fa-house-chimney text-sm"></i></div><div><div class="font-bold text-sm">Outdoor + flushing drain</div><div class="text-xs text-slate-600">Sampai lancar, nggak netes lagi.</div></div></div>
         </div>
-
-        <div class="reveal delay-1">
-          <div class="rounded-[24px] border border-slate-200 overflow-hidden bg-slate-50">
-            <div class="px-6 py-4 bg-white border-b border-slate-200 flex items-center justify-between">
-              <div class="font-bold text-ink">Bandingkan Paket</div>
-              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-ink text-white">Transparan di awal</span>
-            </div>
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm">
-                <thead class="text-xs font-bold tracking-wide text-slate-500">
-                  <tr>
-                    <th class="text-left px-5 py-3 font-bold">Fitur</th>
-                    <th class="text-center px-3 py-3">Hemat</th>
-                    <th class="text-center px-3 py-3 bg-ink text-white">Lengkap</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-200 bg-white">
-                  <tr><td class="px-5 py-3 text-slate-700">Cuci filter & blower indoor</td><td class="text-center"><i class="fa-solid fa-check text-emerald-500"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                  <tr><td class="px-5 py-3 text-slate-700">Cek freon + ampere (ditunjukkan)</td><td class="text-center"><i class="fa-solid fa-check text-emerald-500"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                  <tr><td class="px-5 py-3 text-slate-700">Cuci evaporator detail + anti-jamur</td><td class="text-center"><i class="fa-solid fa-minus text-slate-300"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                  <tr><td class="px-5 py-3 text-slate-700">Cuci outdoor tuntas</td><td class="text-center"><i class="fa-solid fa-minus text-slate-300"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                  <tr><td class="px-5 py-3 text-slate-700">Flushing talang & drain anti-netes</td><td class="text-center"><i class="fa-solid fa-minus text-slate-300"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                  <tr><td class="px-5 py-3 text-slate-700">Cover & terpal + dipel lagi</td><td class="text-center"><i class="fa-solid fa-minus text-slate-300"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                  <tr><td class="px-5 py-3 text-slate-700">Foto before-after via WA</td><td class="text-center"><i class="fa-solid fa-minus text-slate-300"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                  <tr><td class="px-5 py-3 font-semibold text-ink">Garansi 7 hari</td><td class="text-center"><i class="fa-solid fa-minus text-slate-300"></i></td><td class="text-center bg-slate-900/5"><i class="fa-solid fa-check text-emerald-600"></i></td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="px-5 py-4 bg-amber-50 border-t border-amber-200 text-xs leading-relaxed text-amber-800">
-              <i class="fa-solid fa-lightbulb"></i> <span class="font-bold">Tips jujur:</span> Kalau AC masih dingin & baru 3 bulan lalu dicuci, ambil Hemat cukup. Kalau sudah bau / netes / >5 bulan belum cuci, ambil Lengkap biar tuntas.
-            </div>
-          </div>
-
-          <div class="mt-4 grid grid-cols-3 gap-3 text-center text-xs">
-            <div class="rounded-2xl bg-white border border-slate-200 p-3">
-              <div class="w-8 h-8 mx-auto rounded-xl bg-slate-900 text-white flex items-center justify-center"><i class="fa-solid fa-screwdriver-wrench text-xs"></i></div>
-              <div class="font-bold text-ink mt-2">Alat lengkap</div>
-              <div class="text-slate-500 leading-tight">Jet cleaner, manifold, tang ampere, cover</div>
-            </div>
-            <div class="rounded-2xl bg-white border border-slate-200 p-3">
-              <div class="w-8 h-8 mx-auto rounded-xl bg-cyanbrand text-white flex items-center justify-center"><i class="fa-solid fa-clock text-xs"></i></div>
-              <div class="font-bold text-ink mt-2">Tepat waktu</div>
-              <div class="text-slate-500 leading-tight">Telat >30 menit kabari WA</div>
-            </div>
-            <div class="rounded-2xl bg-white border border-slate-200 p-3">
-              <div class="w-8 h-8 mx-auto rounded-xl bg-emerald-500 text-white flex items-center justify-center"><i class="fa-solid fa-hand-sparkles text-xs"></i></div>
-              <div class="font-bold text-ink mt-2">Bersih lagi</div>
-              <div class="text-slate-500 leading-tight">Lantai dipel, sampah dibawa</div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="rounded-[22px] border border-slate-200 overflow-hidden">
+        <div class="px-5 py-3 bg-white border-b border-slate-200 flex justify-between"><span class="font-bold text-ink text-sm">Bandingkan</span><span class="text-xs font-bold px-2 py-1 rounded-full bg-ink text-white">Transparan</span></div>
+        <table class="w-full text-sm">
+          <thead class="text-xs text-slate-500"><tr><th class="text-left px-4 py-2">Fitur</th><th class="px-2">Hemat</th><th class="px-2 bg-ink text-white">Lengkap</th></tr></thead>
+          <tbody class="text-xs divide-y divide-slate-200">
+            <tr><td class="px-4 py-2.5">Filter & blower</td><td class="text-center">✔</td><td class="text-center bg-slate-50">✔</td></tr>
+            <tr><td class="px-4 py-2.5">Freon & ampere</td><td class="text-center">✔</td><td class="text-center bg-slate-50">✔</td></tr>
+            <tr><td class="px-4 py-2.5">Evaporator + anti-jamur</td><td class="text-center">—</td><td class="text-center bg-slate-50">✔</td></tr>
+            <tr><td class="px-4 py-2.5">Outdoor + drain</td><td class="text-center">—</td><td class="text-center bg-slate-50">✔</td></tr>
+            <tr><td class="px-4 py-2.5">Cover, pel, foto WA</td><td class="text-center">—</td><td class="text-center bg-slate-50">✔</td></tr>
+            <tr><td class="px-4 py-2.5 font-bold">Garansi 7 hari</td><td class="text-center">—</td><td class="text-center bg-slate-50">✔</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
   <!-- BENEFITS -->
-  <section class="py-10 md:py-14 bg-sand border-y border-slate-100">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="max-w-3xl reveal">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold tracking-wide">HASIL YANG ANDA RASAKAN DI RUMAH</div>
-        <h2 class="font-display text-[30px] md:text-[34px] font-bold text-ink leading-tight mt-3">Bukan Cuma AC Bersih,<br>Tapi Rumah Lebih Nyaman</h2>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-4 md:gap-5 mt-8">
-        <div class="bg-white rounded-[22px] border border-slate-200 p-6 hover:shadow-soft transition reveal">
-          <div class="w-11 h-11 rounded-xl bg-cyanbrand text-white flex items-center justify-center"><i class="fa-solid fa-snowflake"></i></div>
-          <h3 class="font-bold text-ink mt-4">Tidur nyenyak, AC dinginnya balik 15 menit</h3>
-          <p class="text-sm text-slate-600 leading-relaxed mt-2">Anak nggak lagi kebangun kegerahan jam 2 pagi. Di Resinda, Bu Yanti bilang “baru 15 menit nyala, kamar langsung nyess” — setelah 6 bulan nggak dicuci.</p>
-          <div class="mt-3 text-xs font-semibold inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">AC kerja 20–30% lebih ringan</div>
-        </div>
-        <div class="bg-white rounded-[22px] border border-slate-200 p-6 hover:shadow-soft transition reveal delay-1">
-          <div class="w-11 h-11 rounded-xl bg-emerald-500 text-white flex items-center justify-center"><i class="fa-solid fa-wind"></i></div>
-          <h3 class="font-bold text-ink mt-4">Udara nggak bau, lebih aman buat alergi</h3>
-          <p class="text-sm text-slate-600 leading-relaxed mt-2">Lendir & debu halus keangkat. Cocok untuk yang punya bayi atau gampang bersin tiap AC nyala di perumahan dekat jalan pantura.</p>
-          <div class="mt-3 text-xs font-semibold inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700">Bau apek hilang</div>
-        </div>
-        <div class="bg-ink text-white rounded-[22px] p-6 relative overflow-hidden reveal delay-2">
-          <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
-          <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center"><i class="fa-solid fa-broom"></i></div>
-          <h3 class="font-bold mt-4">Rumah tetap rapi — kami yang beresin</h3>
-          <p class="text-sm text-white/80 leading-relaxed mt-2">Pakai plastik cover indoor & terpal lantai. Selesai, kami pel lagi. Ibu rumah tangga di Grand Taruma paling suka bagian ini.</p>
-          <div class="mt-3 text-xs font-semibold inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/15 border border-white/15"><i class="fa-solid fa-check"></i> Nggak cipratan ke sofa & gorden</div>
-        </div>
-        <div class="bg-white rounded-[22px] border border-slate-200 p-6 hover:shadow-soft transition reveal">
-          <div class="w-11 h-11 rounded-xl bg-amber-500 text-white flex items-center justify-center"><i class="fa-solid fa-bolt"></i></div>
-          <h3 class="font-bold text-ink mt-4">Tagihan listrik lebih hemat</h3>
-          <p class="text-sm text-slate-600 leading-relaxed mt-2">AC bersih nggak perlu ngoyo. Rata-rata pelanggan kami tagihan turun 150–200rb setelah cuci Lengkap + freon pas.</p>
-        </div>
-        <div class="bg-white rounded-[22px] border border-slate-200 p-6 hover:shadow-soft transition reveal delay-1">
-          <div class="w-11 h-11 rounded-xl bg-ink text-white flex items-center justify-center"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3 class="font-bold text-ink mt-4">AC lebih awet, jarang rewel</h3>
-          <p class="text-sm text-slate-600 leading-relaxed mt-2">Kompresor tidak panas terus, freon tidak bocor sia-sia. Servis rutin 4–6 bulan sekali bikin AC ½ PK bisa awet 5–7 tahun.</p>
-        </div>
-        <div class="bg-white rounded-[22px] border-2 border-dashed border-slate-300 p-6 flex flex-col justify-center reveal delay-2">
-          <div class="text-sm font-bold text-ink">Mau bukti dulu?</div>
-          <p class="text-sm text-slate-600 mt-1">Kami kirim foto before-after evaporator & drain ke WA Anda setelah selesai. Biar Anda lihat sendiri bedanya.</p>
-          <a href="https://wa.me/6281223456789?text=Halo%20kak%2C%20boleh%20lihat%20contoh%20foto%20before-after%20cuci%20AC%3F" target="_blank" class="mt-3 inline-flex items-center gap-2 text-sm font-bold text-cyanbrand">Lihat contoh foto <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
+  <section class="py-10 bg-sand border-y border-slate-100">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6">
+      <h2 class="font-display text-2xl font-bold text-ink">Hasil yang terasa di rumah</h2>
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <div class="bg-white rounded-2xl border border-slate-200 p-5"><div class="w-9 h-9 rounded-xl bg-cyanbrand text-white grid place-items-center"><i class="fa-solid fa-snowflake text-sm"></i></div><h3 class="font-bold text-sm mt-3">Dingin lagi 15 menit</h3><p class="text-xs text-slate-600 mt-1">Nggak kebangun gerah tengah malam.</p></div>
+        <div class="bg-white rounded-2xl border border-slate-200 p-5"><div class="w-9 h-9 rounded-xl bg-emerald-500 text-white grid place-items-center"><i class="fa-solid fa-wind text-sm"></i></div><h3 class="font-bold text-sm mt-3">Udara nggak bau</h3><p class="text-xs text-slate-600 mt-1">Aman untuk bayi & alergi.</p></div>
+        <div class="bg-ink text-white rounded-2xl p-5"><div class="w-9 h-9 rounded-xl bg-white/15 grid place-items-center"><i class="fa-solid fa-broom text-sm"></i></div><h3 class="font-bold text-sm mt-3">Rumah tetap rapi</h3><p class="text-xs text-white/80 mt-1">Cover + terpal, selesai dipel lagi.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIAL -->
-  <section id="testimoni" class="py-10 md:py-14 bg-white">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 reveal">
-        <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-bold tracking-wide">KATA WARGA KARAWANG</div>
-          <h2 class="font-display text-[30px] md:text-[34px] font-bold text-ink leading-tight mt-3">Bukan “bagus banget” doang.<br>Ini cerita aslinya.</h2>
+  <!-- TESTIMONI -->
+  <section id="testimoni" class="py-10 bg-white">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6">
+      <h2 class="font-display text-2xl font-bold text-ink">Kata warga Karawang</h2>
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-4">
+          <div class="flex items-center gap-2 text-xs"><span class="font-bold">Ibu Dina S.</span><span class="text-slate-500">• Grand Taruma</span><span class="ml-auto text-amber-400"><i class="fa-solid fa-star"></i>5</span></div>
+          <p class="text-sm mt-2">“Bau apek hilang, teknisi datang jam 10 pas. Seminggu masih wangi.”</p>
         </div>
-        <div class="text-sm text-slate-600 max-w-[420px]">Semua testimoni dari pelanggan rumahan 1–4 AC di Karawang. Kami minta izin share perumahan, bukan nama lengkap demi privasi.</div>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-4 md:gap-5 mt-8">
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 reveal">
-          <div class="flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&h=100&q=80" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div>
-              <div class="text-sm font-bold text-ink">Ibu Dina S.</div>
-              <div class="text-xs text-slate-500">Grand Taruma, Karawang Barat • 2 AC Daikin</div>
-            </div>
-            <div class="ml-auto text-amber-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p class="text-[14px] leading-relaxed text-slate-700 mt-3">“AC kamar anak bau apek tiap pagi, sudah ganti parfum ruangan tetap bau. Mas teknisi datang jam 10 pas, dibongkar pelan, ternyata lendir tebal. Habis dicuci Lengkap, bau hilang. Seminggu ini masih wangi bersih.”</p>
-          <div class="mt-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-white border border-slate-200 inline-flex">Paket Lengkap • April 2025</div>
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-4">
+          <div class="flex items-center gap-2 text-xs"><span class="font-bold">Pak Andi W.</span><span class="text-slate-500">• Telukjambe</span><span class="ml-auto text-amber-400"><i class="fa-solid fa-star"></i>5</span></div>
+          <p class="text-sm mt-2">“Dikira freon habis, ternyata drain mampet. Dikasih foto before-after.”</p>
         </div>
-
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 reveal delay-1">
-          <div class="flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div>
-              <div class="text-sm font-bold text-ink">Pak Andi W.</div>
-              <div class="text-xs text-slate-500">Telukjambe Timur • 2 AC Panasonic 1 PK</div>
-            </div>
-            <div class="ml-auto text-amber-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p class="text-[14px] leading-relaxed text-slate-700 mt-3">“Yang satu netes terus sampai tembok lembab. Dikira freon habis, eh ternyata selang mampet lumut. Dibersihin sampai outdoor, dikasih lihat foto before-after. Jujur, enak dijelasinnya.”</p>
-          <div class="mt-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-white border border-slate-200 inline-flex">Paket Lengkap • Maret 2025</div>
+        <div class="bg-ink text-white rounded-2xl p-4">
+          <div class="flex items-center gap-2 text-xs"><span class="font-bold">Teh Sinta K.</span><span class="text-white/70">• Galuh Mas</span><span class="ml-auto text-amber-400"><i class="fa-solid fa-star"></i>5</span></div>
+          <p class="text-sm mt-2 text-white/90">“Tekanan 150 psi masih aman, nggak maksa isi. Jujur.”</p>
         </div>
-
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 reveal delay-2">
-          <div class="flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=100&h=100&q=80" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div>
-              <div class="text-sm font-bold text-ink">Teh Sinta K.</div>
-              <div class="text-xs text-slate-500">Galuh Mas, Karawang Barat • 1 AC LG</div>
-            </div>
-            <div class="ml-auto text-amber-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p class="text-[14px] leading-relaxed text-slate-700 mt-3">“Paling takut ditipu freon. Masnya cek pakai alat manifold di depan saya, tekanan masih 150 psi masih aman jadi nggak perlu isi. Suka sama kejujurannya.”</p>
-          <div class="mt-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-white border border-slate-200 inline-flex">Cek freon jujur</div>
-        </div>
-
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 reveal">
-          <div class="flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=100&h=100&q=80" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div>
-              <div class="text-sm font-bold text-ink">Bu Yanti L.</div>
-              <div class="text-xs text-slate-500">Klari • 1 AC Sharp ½ PK</div>
-            </div>
-            <div class="ml-auto text-amber-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p class="text-[14px] leading-relaxed text-slate-700 mt-3">“Booking lewat WA jam 8 malam, dijawab. Besok siangnya langsung datang. Harga sesuai di WA, 95rb nggak ada biaya siluman. Rumah juga nggak kotor.”</p>
-          <div class="mt-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-white border border-slate-200 inline-flex">Respon cepat</div>
-        </div>
-
-        <div class="bg-ink text-white rounded-[20px] p-5 reveal delay-1 relative overflow-hidden">
-          <div class="absolute -top-8 -right-8 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-          <div class="flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100&q=80" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div>
-              <div class="text-sm font-bold">Mas Rizal F.</div>
-              <div class="text-xs text-white/70">Perum Resinda • 3 AC Sharp & Samsung</div>
-            </div>
-            <div class="ml-auto text-amber-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p class="text-[14px] leading-relaxed text-white/90 mt-3">“Langganan tiap 5 bulan, diingetin WA pas waktunya cuci. AC jadi dingin lagi, tagihan bulan kemarin turun 180rb. Paket keluarga 3 AC worth it.”</p>
-          <div class="mt-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-white/15 border border-white/15 inline-flex">Langganan 2x • Paket Keluarga</div>
-        </div>
-
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 reveal delay-2">
-          <div class="flex items-center gap-3">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80" class="w-10 h-10 rounded-full object-cover" alt="">
-            <div>
-              <div class="text-sm font-bold text-ink">Pak Hendra T.</div>
-              <div class="text-xs text-slate-500">Cikampek • Rumah cluster type 36, 3 AC</div>
-            </div>
-            <div class="ml-auto text-amber-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p class="text-[14px] leading-relaxed text-slate-700 mt-3">“Ruang tamu & 2 kamar total 3 AC. Paket keluarga selesai 2 jam, teknisi bawa terpal sendiri. Lantai dipel lagi, istri senang nggak komplain.”</p>
-          <div class="mt-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-white border border-slate-200 inline-flex">Selesai 2 jam • Tetap rapi</div>
-        </div>
-      </div>
-
-      <div class="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold">
-        <span class="px-3 py-2 rounded-full bg-slate-50 border border-slate-200 flex items-center gap-1.5"><i class="fa-brands fa-google text-[#4285F4]"></i> Lihat 127 ulasan di Google — ketik “Karawang Sejuk”</span>
-        <span class="px-3 py-2 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 hidden md:inline-flex">Rata-rata pelanggan cuci tiap 4–6 bulan sekali</span>
       </div>
     </div>
   </section>
 
   <!-- BONUS -->
-  <section id="bonus" class="py-10 md:py-14 bg-amber-50 border-y border-amber-100">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="bg-white rounded-[28px] border border-amber-200 overflow-hidden shadow-soft reveal">
-        <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-0">
-          <div class="p-6 md:p-8">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-white text-xs font-extrabold tracking-wide"><i class="fa-solid fa-gift"></i> BONUS UNTUK 20 PELANGGAN BARU BULAN INI</div>
-            <h2 class="font-display text-[26px] md:text-[32px] font-bold text-ink leading-tight mt-3">Pesan 2 AC Lengkap,<br>Dapat Bonusnya 3.</h2>
-            <p class="text-sm text-slate-600 mt-2">Biar AC rumah Anda nggak kumat lagi bulan depan.</p>
-
-            <div class="mt-6 space-y-3">
-              <div class="flex gap-3 p-4 rounded-2xl bg-sand border border-amber-100">
-                <div class="w-10 h-10 rounded-xl bg-white border border-amber-200 flex items-center justify-center shrink-0 text-amber-600"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div>
-                  <div class="font-bold text-ink text-sm">Bonus #1 — Free pengecekan 1 AC tambahan</div>
-                  <div class="text-sm text-slate-600 leading-relaxed">Kalau pesan 2 AC Paket Lengkap, kami gratis cek 1 AC lagi (cek freon + ampere + drain). Nggak dicuci, tapi Anda tahu kondisinya aman atau perlu jadwal berikut.</div>
-                  <div class="text-xs font-bold text-amber-700 mt-1">Nilai Rp75.000 — gratis</div>
-                </div>
-              </div>
-              <div class="flex gap-3 p-4 rounded-2xl bg-sand border border-amber-100">
-                <div class="w-10 h-10 rounded-xl bg-white border border-amber-200 flex items-center justify-center shrink-0 text-emerald-600"><i class="fa-brands fa-whatsapp text-lg"></i></div>
-                <div>
-                  <div class="font-bold text-ink text-sm">Bonus #2 — Reminder WA tiap 6 bulan</div>
-                  <div class="text-sm text-slate-600 leading-relaxed">Kami catat tanggal cuci terakhir. Pas 6 bulan, kami WA “Kak, AC di Resinda sudah waktunya cek lagi?” — Anda nggak perlu ingat-ingat.</div>
-                  <div class="text-xs font-bold text-emerald-700 mt-1">Gratis selamanya untuk pelanggan</div>
-                </div>
-              </div>
-              <div class="flex gap-3 p-4 rounded-2xl bg-sand border border-amber-100">
-                <div class="w-10 h-10 rounded-xl bg-white border border-amber-200 flex items-center justify-center shrink-0 text-cyanbrand"><i class="fa-solid fa-file-pdf"></i></div>
-                <div>
-                  <div class="font-bold text-ink text-sm">Bonus #3 — Stiker jadwal + tips hemat listrik (PDF)</div>
-                  <div class="text-sm text-slate-600 leading-relaxed">Stiker ditempel di indoor biar nggak lupa, plus PDF 1 halaman tips setting suhu 24–26°C biar hemat tanpa gerah.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-6 flex flex-col sm:flex-row gap-3">
-              <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20klaim%20Bonus%20Free%20Cek%201%20AC%20untuk%20order%202%20AC%20Lengkap%20di%20%5Balamat%5D." target="_blank" data-cta="bonus_wa" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold">Klaim Bonus di WA <i class="fa-brands fa-whatsapp"></i></a>
-              <div class="text-xs text-slate-500 flex items-center gap-1.5"><i class="fa-solid fa-clock"></i> Sisa kuota bulan ini: <span class="font-bold text-ink">11 slot lagi</span> • Update 17 Sep 2026</div>
-            </div>
-          </div>
-
-          <div class="bg-ink p-6 md:p-8 text-white relative overflow-hidden flex flex-col justify-center">
-            <div class="absolute -top-20 -right-20 w-72 h-72 bg-cyanbrand/20 rounded-full blur-3xl"></div>
-            <div class="relative">
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-bold tracking-wide">CONTOH CHAT PELANGGAN</div>
-              <div class="mt-4 bg-white rounded-[20px] p-4 text-slate-800 shadow-soft">
-                <div class="flex items-center gap-2 text-xs font-bold text-slate-500"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> WhatsApp • Karawang Sejuk</div>
-                <div class="mt-3 space-y-2 text-sm">
-                  <div class="bg-slate-100 rounded-2xl rounded-bl-sm px-4 py-2.5">Halo kak, mau cuci 2 AC di Galuh Mas, 1 AC Panasonic bau, 1 AC Daikin kurang dingin. Kena berapa ya?</div>
-                  <div class="bg-cyanbrand text-white rounded-2xl rounded-br-sm px-4 py-2.5 ml-8">Halo Bu Sinta! 2 AC Paket Lengkap Rp190rb aja (95rb/unit). Sudah termasuk cover & garansi 7 hari. Bonus cek 1 AC lagi free. Mau jadwal besok jam 10 atau jam 3 sore?</div>
-                  <div class="bg-slate-100 rounded-2xl rounded-bl-sm px-4 py-2.5">Jam 10 bisa kak. Alamat cluster Anggrek blok C3/12.</div>
-                  <div class="bg-cyanbrand text-white rounded-2xl rounded-br-sm px-4 py-2.5 ml-8">Siap, kami catat jam 10. Teknisi Dadan yang datang, pakai cover ya Bu biar rumah tetap bersih 🙏</div>
-                </div>
-                <div class="mt-3 flex items-center gap-2 text-[11px] text-slate-500"><i class="fa-solid fa-check-double text-cyanbrand"></i> Balas cepat • Harga di awal • No tipu-tipu</div>
-              </div>
-              <div class="mt-4 flex items-center gap-2 text-xs text-white/70"><i class="fa-solid fa-shield-halved"></i> Chat asli, nama disamarkan demi privasi</div>
-            </div>
+  <section id="bonus" class="py-10 bg-amber-50 border-y border-amber-100">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6">
+      <div class="bg-white rounded-[22px] border border-amber-200 p-6 md:p-7 grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <div class="inline-flex px-3 py-1 rounded-full bg-accent text-white text-xs font-extrabold">BONUS 20 PELANGGAN BARU</div>
+          <h2 class="font-display text-2xl font-bold text-ink mt-3">Pesan 2 AC → Dapat 3 Bonus</h2>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Free cek 1 AC tambahan</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Reminder WA 6 bulan gratis</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Stiker jadwal + tips hemat listrik</li>
+          </ul>
+          <a href="https://wa.me/6281223456789?text=Halo%20mau%20klaim%20bonus%202%20AC%20di%20%5Balamat%5D" target="_blank" class="mt-5 inline-flex px-6 py-3 rounded-full bg-accent text-white font-extrabold">Klaim di WA</a>
+        </div>
+        <div class="bg-ink rounded-2xl p-4 text-white">
+          <div class="text-xs font-bold tracking-wide opacity-70">CONTOH CHAT</div>
+          <div class="mt-3 bg-white rounded-2xl p-3 text-sm text-slate-800 space-y-2">
+            <div class="bg-slate-100 rounded-xl px-3 py-2">Mau cuci 2 AC di Galuh Mas, kena berapa?</div>
+            <div class="bg-cyanbrand text-white rounded-xl px-3 py-2 ml-6">2 AC Lengkap Rp190rb, bonus cek 1 AC free. Mau jam 10 atau jam 3?</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOUNDER NOTE -->
-  <section class="py-10 md:py-14 bg-white">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="grid lg:grid-cols-[380px_1fr] gap-8 items-start">
-        <div class="reveal">
-          <div class="rounded-[24px] overflow-hidden border border-slate-200 shadow-soft bg-slate-50">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&h=700&q=80" alt="Founder Karawang Sejuk" class="w-full h-[380px] object-cover">
-            <div class="p-4 bg-white border-t border-slate-200">
-              <div class="font-bold text-ink">Dadan — Founder Karawang Sejuk</div>
-              <div class="text-xs text-slate-500">Warga Kosambi, Karawang • Teknisi AC rumahan sejak 2018</div>
-              <div class="mt-3 flex gap-2 text-xs font-semibold">
-                <span class="px-2.5 py-1 rounded-full bg-slate-900 text-white">NIB terdaftar</span>
-                <span class="px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700">Respon <30 menit</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="reveal delay-1">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-bold tracking-wide">CATATAN DARI PENDIRI</div>
-          <h2 class="font-display text-[26px] md:text-[30px] font-bold text-ink leading-tight mt-3">“Saya bikin jasa ini karena<br>kesal lihat tetangga ditipu freon.”</h2>
-          <div class="mt-5 bg-sand rounded-[20px] border border-slate-200 p-6 md:p-7 relative">
-            <i class="fa-solid fa-quote-left absolute -top-3 -left-2 w-10 h-10 rounded-full bg-ink text-white flex items-center justify-center text-sm"></i>
-            <div class="font-hand text-[22px] leading-relaxed text-ink">
-              Halo, saya Dadan.
-            </div>
-            <div class="text-[15px] leading-relaxed text-slate-700 mt-3 space-y-3">
-              <p>Awalnya cuma bantu tetangga di Kosambi benerin AC bocor pakai alat seadanya. Lama-lama banyak yang curhat: <em>“Kang, tukang sebelumnya datang telat 3 jam, habis cuci lantai masih berantakan, eh tiba-tiba nambah biaya isi freon 250rb padahal nggak perlu.”</em></p>
-              <p>Makanya saya bikin <span class="font-bold text-ink">Karawang Sejuk</span> dengan 3 janji yang saya pegang sampai sekarang:</p>
-              <ol class="list-decimal ml-5 space-y-1 font-semibold text-ink">
-                <li><span class="font-bold">Datang tepat waktu</span> — kalau telat >30 menit, saya WA duluan, bukan ngilang.</li>
-                <li><span class="font-bold">Kerja bersih</span> — pakai cover plastik & terpal, selesai dipel lagi.</li>
-                <li><span class="font-bold">Harga jujur di awal</span> — freon masih aman ya saya bilang aman, nggak maksa isi.</li>
-              </ol>
-              <p>Kalau Anda di Telukjambe, Galuh Mas, Klari sampai Cikampek dan AC rumah sudah 4–6 bulan belum dicuci, WA saya aja. Konsultasi gratis, nggak jadi pesan juga nggak apa-apa.</p>
-            </div>
-            <div class="mt-5 flex items-center gap-3">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&h=100&q=80" class="w-10 h-10 rounded-full object-cover" alt="">
-              <div>
-                <div class="font-display font-bold text-ink leading-none" style="font-family:Caveat,cursive; font-size:22px;">Dadan — Karawang Sejuk</div>
-                <div class="text-xs text-slate-500">Balas WA langsung, bukan admin bot</div>
-              </div>
-              <a href="https://wa.me/6281223456789?text=Halo%20Kang%20Dadan%2C%20mau%20konsultasi%20AC%20rumah%20di%20..." target="_blank" class="ml-auto hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-ink text-white font-bold text-sm">Chat Kang Dadan <i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-          </div>
-          <div class="mt-4 grid sm:grid-cols-3 gap-3 text-xs">
-            <div class="bg-white border border-slate-200 rounded-2xl p-3 flex items-center gap-2.5"><i class="fa-solid fa-award text-amber-500"></i><span class="font-semibold">Teknisi berpengalaman, APD & alat lengkap</span></div>
-            <div class="bg-white border border-slate-200 rounded-2xl p-3 flex items-center gap-2.5"><i class="fa-solid fa-handshake text-emerald-500"></i><span class="font-semibold">Edukasi, bukan maksa jualan</span></div>
-            <div class="bg-white border border-slate-200 rounded-2xl p-3 flex items-center gap-2.5"><i class="fa-solid fa-house text-cyanbrand"></i><span class="font-semibold">Fokus rumahan 1–4 AC, bukan proyek besar</span></div>
-          </div>
+  <!-- FOUNDER -->
+  <section class="py-10 bg-white">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6 grid md:grid-cols-[300px_1fr] gap-6 items-start">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&h=700&q=80" alt="Dadan" class="w-full h-[320px] object-cover rounded-2xl border border-slate-200">
+      <div>
+        <div class="inline-flex px-3 py-1 rounded-full bg-ink text-white text-xs font-bold">CATATAN PENDIRI</div>
+        <h2 class="font-display text-xl font-bold text-ink mt-3">“Kesal lihat tetangga ditipu freon.”</h2>
+        <div class="mt-3 bg-sand rounded-2xl border border-slate-200 p-5 text-sm leading-relaxed text-slate-700">
+          <p class="font-hand text-lg text-ink">Halo, saya Dadan — Kosambi, teknisi sejak 2018.</p>
+          <p class="mt-2">Banyak curhat: telat 3 jam, rumah kotor, tiba-tiba nambah freon 250rb. Makanya saya bikin Karawang Sejuk dengan 3 janji:</p>
+          <p class="mt-2 font-bold text-ink">1. Tepat waktu 2. Kerja bersih 3. Harga jujur di awal.</p>
+          <p class="mt-2">Konsultasi gratis — nggak jadi pesan juga nggak apa-apa.</p>
+          <div class="mt-3 font-hand text-lg text-ink">Dadan — Karawang Sejuk</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA TENGAH -->
-  <section class="py-8 md:py-10">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="rounded-[28px] bg-ink text-white overflow-hidden relative reveal">
-        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(white 1px, transparent 1px); background-size: 20px 20px;"></div>
-        <div class="absolute -top-24 -right-24 w-[520px] h-[520px] bg-cyanbrand/30 rounded-full blur-3xl"></div>
-        <div class="relative grid lg:grid-cols-[1.2fr_.8fr] gap-6 p-6 md:p-8 lg:p-10 items-center">
-          <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-bold tracking-wide">SUDAH WAKTUNYA AC DICUCI? JANGAN DITUNDA</div>
-            <h2 class="font-display text-[26px] md:text-[34px] font-bold leading-tight mt-3">Jadwalkan Sekarang,<br>Besok Bisa Langsung Dingin.</h2>
-            <p class="text-white/80 text-sm md:text-[15px] leading-relaxed mt-3 max-w-[560px]">Slot Sabtu–Minggu di Galuh Mas & Resinda cepat penuh. Chat hari ini, kami kunci jadwal besok pagi/sore — harga nggak berubah di lokasi.</p>
-            <div class="flex flex-col sm:flex-row gap-3 mt-6">
-              <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20saya%20mau%20jadwalkan%20servis%20AC%20rumah%20di%20Karawang.%20Alamat%3A%20__%20Jumlah%20AC%3A%20__%20Mau%20jadwal%20besok%20jam%20__" target="_blank" data-cta="mid_wa" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold shadow-lg">Jadwalkan Servis Sekarang <i class="fa-brands fa-whatsapp text-lg"></i></a>
-              <a href="tel:+6281223456789" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white text-ink font-extrabold"><i class="fa-solid fa-phone"></i> 0812-2345-6789</a>
-            </div>
-            <div class="flex flex-wrap gap-2 mt-3 text-xs font-semibold text-white/80">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15"><i class="fa-solid fa-check"></i> Garansi 7 hari</span>
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15"><i class="fa-solid fa-check"></i> Harga di awal</span>
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15"><i class="fa-solid fa-check"></i> Rumah tetap bersih</span>
-            </div>
+  <!-- CTA -->
+  <section class="py-8">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6">
+      <div class="rounded-[22px] bg-ink text-white p-6 md:p-8 grid lg:grid-cols-[1.2fr_.8fr] gap-6 items-center">
+        <div>
+          <h2 class="font-display text-2xl md:text-3xl font-bold">Jadwalkan Sekarang, Besok Dingin.</h2>
+          <p class="text-sm text-white/70 mt-2">Slot Sabtu–Minggu cepat penuh. Chat hari ini, harga nggak berubah di lokasi.</p>
+          <div class="flex flex-wrap gap-3 mt-5">
+            <a href="https://wa.me/6281223456789?text=Halo%20mau%20jadwal%20servis%20AC%20di%20%5Balamat%5D" target="_blank" class="px-7 py-3.5 rounded-full bg-accent text-white font-extrabold">Jadwalkan via WA</a>
+            <a href="tel:+6281223456789" class="px-7 py-3.5 rounded-full bg-white text-ink font-extrabold">Telepon</a>
           </div>
-          <div class="bg-white rounded-[22px] p-5 text-slate-800">
-            <div class="font-bold text-ink">Cek slot terdekat — 17 Sep 2026</div>
-            <div class="grid grid-cols-3 gap-2 mt-3 text-center text-xs font-bold">
-              <div class="rounded-xl border-2 border-emerald-500 bg-emerald-50 p-3">
-                <div class="text-emerald-700">Hari ini</div><div class="text-ink text-sm">16.00</div><div class="text-emerald-600">Tersedia</div>
-              </div>
-              <div class="rounded-xl border-2 border-emerald-500 bg-emerald-50 p-3">
-                <div class="text-emerald-700">Hari ini</div><div class="text-ink text-sm">19.00</div><div class="text-emerald-600">Tersedia</div>
-              </div>
-              <div class="rounded-xl border border-slate-200 bg-slate-50 p-3 opacity-60">
-                <div class="text-slate-500">Besok</div><div class="text-ink text-sm">09.00</div><div class="text-slate-500">Hampir penuh</div>
-              </div>
-            </div>
-            <div class="mt-4 flex items-center gap-2 text-xs text-slate-500"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Update realtime • Balas WA rata-rata 12 menit</div>
-            <a href="https://wa.me/6281223456789?text=Halo%20kak%2C%20mau%20tanya%20slot%20jam%20..." target="_blank" class="mt-3 w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-ink text-white font-bold">Tanya slot di WA</a>
+        </div>
+        <div class="bg-white rounded-2xl p-4 text-ink text-sm">
+          <div class="font-bold">Slot terdekat</div>
+          <div class="grid grid-cols-3 gap-2 mt-2 text-xs font-bold text-center">
+            <div class="rounded-xl border-2 border-emerald-500 bg-emerald-50 p-2"><div>Hari ini</div><div>16.00</div></div>
+            <div class="rounded-xl border-2 border-emerald-500 bg-emerald-50 p-2"><div>Hari ini</div><div>19.00</div></div>
+            <div class="rounded-xl border bg-slate-50 p-2 opacity-60"><div>Besok</div><div>09.00</div></div>
           </div>
         </div>
       </div>
@@ -852,377 +328,79 @@
   </section>
 
   <!-- TRUST -->
-  <section id="kontak" class="py-10 md:py-14 bg-white">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="text-center max-w-2xl mx-auto reveal">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-bold tracking-wide">KENAPA WARGA PERCAYA KAMI</div>
-        <h2 class="font-display text-[30px] md:text-[36px] font-bold text-ink leading-tight mt-3">Proses Jelas, Nggak Bikin Was-Was.</h2>
-        <p class="text-slate-600 text-sm md:text-[15px] mt-2">Dari chat sampai selesai, Anda tahu setiap langkah. Nggak ada biaya siluman, nggak ada drama telat tanpa kabar.</p>
+  <section id="kontak" class="py-10 bg-white">
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6">
+      <h2 class="font-display text-2xl font-bold text-ink text-center">Proses jelas, nggak was-was</h2>
+      <div class="grid md:grid-cols-4 gap-4 mt-6 text-sm">
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-4"><div class="w-8 h-8 rounded-xl bg-ink text-white grid place-items-center font-bold text-xs">1</div><div class="font-bold mt-2">Chat & Booking</div><div class="text-xs text-slate-600">Sebut alamat + jumlah AC, kami kunci jadwal.</div></div>
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-4"><div class="w-8 h-8 rounded-xl bg-cyanbrand text-white grid place-items-center font-bold text-xs">2</div><div class="font-bold mt-2">Datang & Cek</div><div class="text-xs text-slate-600">Cek freon & ampere di depan Anda.</div></div>
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-4"><div class="w-8 h-8 rounded-xl bg-tealbrand text-white grid place-items-center font-bold text-xs">3</div><div class="font-bold mt-2">Cuci & Test</div><div class="text-xs text-slate-600">Cover terpasang, foto before-after WA.</div></div>
+        <div class="bg-ink text-white rounded-2xl p-4"><div class="w-8 h-8 rounded-xl bg-white text-ink grid place-items-center font-bold text-xs">4</div><div class="font-bold mt-2">Bersih & Garansi</div><div class="text-xs opacity-80">Dipel lagi, garansi 7 hari.</div></div>
       </div>
-
-      <div class="grid md:grid-cols-4 gap-4 md:gap-5 mt-8">
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 relative reveal">
-          <div class="w-10 h-10 rounded-xl bg-ink text-white flex items-center justify-center font-extrabold">1</div>
-          <h3 class="font-bold text-ink mt-3">Chat & Booking (5 menit)</h3>
-          <p class="text-sm text-slate-600 mt-1 leading-relaxed">WA kami, sebut alamat (misal: Grand Taruma blok X) + jumlah AC + keluhan. Kami kasih harga di awal & kunci jadwal.</p>
-          <div class="mt-3 text-xs font-semibold inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200"><i class="fa-brands fa-whatsapp text-emerald-500"></i> Prefilled message siap</div>
+      <div class="mt-6 grid lg:grid-cols-2 gap-4">
+        <div class="rounded-2xl border border-slate-200 p-4 text-sm">
+          <div class="font-bold text-ink">Area cover tanpa biaya datang</div>
+          <div class="flex flex-wrap gap-1.5 mt-2 text-xs"><span class="px-2 py-1 rounded-full bg-slate-50 border">Grand Taruma</span><span class="px-2 py-1 rounded-full bg-slate-50 border">Galuh Mas</span><span class="px-2 py-1 rounded-full bg-slate-50 border">Resinda</span><span class="px-2 py-1 rounded-full bg-slate-50 border">Telukjambe</span><span class="px-2 py-1 rounded-full bg-slate-50 border">Klari</span><span class="px-2 py-1 rounded-full bg-slate-50 border">Cikampek</span></div>
         </div>
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 relative reveal delay-1">
-          <div class="w-10 h-10 rounded-xl bg-cyanbrand text-white flex items-center justify-center font-extrabold">2</div>
-          <h3 class="font-bold text-ink mt-3">Datang & Cek (15 menit)</h3>
-          <p class="text-sm text-slate-600 mt-1 leading-relaxed">Teknisi datang pakai alas kaki bersih, cek freon & ampere di depan Anda. Kalau aman, kami bilang aman.</p>
-          <div class="mt-3 text-xs font-semibold inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200"><i class="fa-solid fa-gauge-high text-cyanbrand"></i> Ditunjukkan angkanya</div>
-        </div>
-        <div class="bg-slate-50 rounded-[20px] border border-slate-200 p-5 relative reveal delay-2">
-          <div class="w-10 h-10 rounded-xl bg-tealbrand text-white flex items-center justify-center font-extrabold">3</div>
-          <h3 class="font-bold text-ink mt-3">Cuci & Test (45–60 menit)</h3>
-          <p class="text-sm text-slate-600 mt-1 leading-relaxed">Cover plastik dipasang, cuci indoor-outdoor, flushing drain, test nyala. Anda bisa lihat before-after.</p>
-          <div class="mt-3 text-xs font-semibold inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200"><i class="fa-solid fa-camera text-slate-500"></i> Foto dikirim WA</div>
-        </div>
-        <div class="bg-ink text-white rounded-[20px] p-5 relative reveal delay-3">
-          <div class="w-10 h-10 rounded-xl bg-white text-ink flex items-center justify-center font-extrabold">4</div>
-          <h3 class="font-bold mt-3">Bersih-Bersih & Garansi</h3>
-          <p class="text-sm text-white/80 mt-1 leading-relaxed">Lantai dipel, sampah dibawa. Garansi 7 hari — kalau netes / kurang dingin karena pengerjaan kami, balik gratis.</p>
-          <div class="mt-3 text-xs font-semibold inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/15 border border-white/15"><i class="fa-solid fa-shield-halved"></i> Garansi 7 hari</div>
-        </div>
-      </div>
-
-      <div class="mt-8 grid lg:grid-cols-[1.1fr_.9fr] gap-6 items-start">
-        <div class="bg-white rounded-[20px] border border-slate-200 p-5 md:p-6 reveal">
-          <h3 class="font-bold text-ink">Area & perumahan yang sering kami datangi</h3>
-          <p class="text-sm text-slate-600 mt-1">Kalau alamat Anda di bawah ini, tanpa biaya datang. Luar area, WA dulu ya — biasanya tetap bisa, menyesuaikan rute.</p>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Grand Taruma</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Galuh Mas</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Resinda</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Karawang Green Village</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Telukjambe Village</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Citra Kebun Mas</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Artha Residence</span>
-            <span class="px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">Klari Regency</span>
-          </div>
-          <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
-            <div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 font-semibold"><i class="fa-solid fa-id-card"></i> NIB: 1234567890*</div>
-            <div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 font-semibold"><i class="fa-solid fa-screwdriver-wrench"></i> Alat: jet cleaner, manifold, vacum</div>
-          </div>
-          <div class="text-[11px] text-slate-500 mt-2">*contoh — ganti dengan NIB asli jika ada. Transparansi bikin calon pelanggan lebih percaya.</div>
-        </div>
-
-        <div class="bg-sand rounded-[20px] border border-slate-200 p-5 md:p-6 reveal delay-1">
-          <h3 class="font-bold text-ink">Butuh cepat? Isi form, kami WA balik</h3>
-          <p class="text-xs text-slate-600 mt-1">Atau langsung klik WA — form ini cuma untuk yang mau dihubungi balik tanpa buka WA dulu.</p>
-          <form id="leadForm" class="mt-4 space-y-3">
-            <div class="grid sm:grid-cols-2 gap-3">
-              <label class="text-xs font-bold text-slate-700">Nama <input name="nama" required placeholder="Bu Sinta" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-ink focus:ring-2 focus:ring-ink/10 outline-none text-sm"></label>
-              <label class="text-xs font-bold text-slate-700">No. WA <input name="wa" required placeholder="0812xxxx" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-ink focus:ring-2 focus:ring-ink/10 outline-none text-sm"></label>
-            </div>
-            <label class="text-xs font-bold text-slate-700">Alamat / Perumahan <input name="alamat" required placeholder="Galuh Mas cluster Anggrek blok C3/12" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-ink focus:ring-2 focus:ring-ink/10 outline-none text-sm"></label>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <label class="text-xs font-bold text-slate-700">Jumlah AC
-                <select name="jumlah" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm">
-                  <option>1 AC</option><option>2 AC</option><option>3 AC</option><option>4 AC</option><option>>4 AC</option>
-                </select>
-              </label>
-              <label class="text-xs font-bold text-slate-700">Paket
-                <select name="paket" class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm">
-                  <option>Cuci Hemat - Rp75rb/unit</option><option selected>Cuci Lengkap - Rp95rb/unit</option><option>Paket Keluarga 3 AC Rp275rb</option><option>Paket Keluarga 4 AC Rp350rb</option>
-                </select>
-              </label>
-            </div>
-            <label class="text-xs font-bold text-slate-700">Keluhan (opsional) <textarea name="keluhan" rows="2" placeholder="AC bau apek / netes / kurang dingin..." class="mt-1 w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-ink focus:ring-2 focus:ring-ink/10 outline-none text-sm resize-none"></textarea></label>
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold">Kirim & Hubungi via WA <i class="fa-brands fa-whatsapp"></i></button>
-            <div class="text-center text-[11px] text-slate-500">Dengan klik, Anda setuju dihubungi via WA/telepon untuk jadwal servis. No spam.</div>
-          </form>
-        </div>
+        <form id="leadForm" class="rounded-2xl border border-slate-200 p-4 bg-sand">
+          <div class="font-bold text-sm">Isi form, kami WA balik</div>
+          <div class="grid grid-cols-2 gap-2 mt-3"><input name="nama" placeholder="Nama" required class="px-3 py-2.5 rounded-xl border text-sm"><input name="wa" placeholder="No WA" required class="px-3 py-2.5 rounded-xl border text-sm"></div>
+          <input name="alamat" placeholder="Alamat / perumahan" required class="mt-2 w-full px-3 py-2.5 rounded-xl border text-sm">
+          <div class="grid grid-cols-2 gap-2 mt-2"><select name="jumlah" class="px-3 py-2.5 rounded-xl border text-sm"><option>1 AC</option><option>2 AC</option><option>3 AC</option><option>4 AC</option></select><select name="paket" class="px-3 py-2.5 rounded-xl border text-sm"><option>Hemat 75rb</option><option selected>Lengkap 95rb</option><option>Keluarga 275rb/350rb</option></select></div>
+          <button class="mt-3 w-full py-3 rounded-full bg-accent text-white font-extrabold">Kirim via WA</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="py-10 md:py-14 bg-slate-50 border-y border-slate-100">
-    <div class="max-w-[980px] mx-auto px-4 md:px-6">
-      <div class="text-center reveal">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold tracking-wide">PERTANYAAN YANG SERING DITANYA IBU-IBU</div>
-        <h2 class="font-display text-[30px] md:text-[36px] font-bold text-ink leading-tight mt-3">Jawabannya Jelas, Nggak Berbelit.</h2>
-        <p class="text-slate-600 text-sm mt-2">Kalau masih ragu, WA aja — kami jawab jujur, nggak maksa booking.</p>
-      </div>
-
-      <div class="mt-8 space-y-3" id="faqList">
-        <!-- 1 -->
-        <div class="faq-item open bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Seberapa sering AC rumah harus dicuci?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Kalau AC nyala tiap hari 8 jam atau lebih (kamar tidur, ruang keluarga), idealnya <span class="font-semibold text-ink">tiap 4 bulan</span>. Kalau jarang dipakai, 6 bulan sekali cukup. Di Karawang debunya lumayan tebal apalagi dekat jalan pantura & area proyek — jadi 4 bulan itu paling pas biar nggak bau & tetap dingin. Kami bisa ingetin via WA tiap 6 bulan gratis.
-            </div>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Apakah tiap cuci harus tambah freon?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              <span class="font-semibold text-ink">Tidak.</span> Freon itu nggak habis kalau nggak ada bocor. Kami cek dulu pakai manifold di depan Anda. Kalau tekanan R32 masih 140–160 psi atau R410 masih 120–140 psi, nggak perlu tambah — kami bilang aman. Kalau memang berkurang banyak, baru kami info harga tambah freon sebelum dikerjakan. Anda setuju dulu.
-            </div>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Berapa lama pengerjaannya? Rumah jadi berantakan nggak?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Paket Hemat 30–35 menit/unit, Paket Lengkap 45–60 menit/unit. Untuk 3 AC Paket Keluarga sekitar 2 jam. Kami pakai <span class="font-semibold text-ink">cover plastik untuk indoor + terpal lantai</span>, jadi cipratan ketahan. Selesai kami pel lagi & bawa sampah. Banyak ibu di Grand Taruma bilang “kok bersih, kayak nggak habis diservis.”
-            </div>
-          </div>
-        </div>
-        <!-- 4 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Apakah ada garansi?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Ada, <span class="font-semibold text-ink">garansi 7 hari</span> untuk Paket Lengkap & Keluarga. Kalau dalam 7 hari AC kembali netes atau tidak dingin karena pengerjaan kami, kami balik gratis tanpa biaya. Garansi tidak berlaku kalau ada kebocoran freon besar yang sudah kami info sebelumnya butuh perbaikan terpisah.
-            </div>
-          </div>
-        </div>
-        <!-- 5 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Perlu sediakan apa di rumah?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Cukup <span class="font-semibold text-ink">akses stop kontak & kran air dekat outdoor</span>. Tangga, jet cleaner, cover, terpal, alat ukur — semua kami bawa. Kalau outdoor di atas dak & susah akses, infokan di WA ya biar kami siap bawa tangga tinggi.
-            </div>
-          </div>
-        </div>
-        <!-- 6 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Bisa booking hari Minggu atau malam?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Bisa. Kami buka <span class="font-semibold text-ink">08.00–20.00 tiap hari termasuk Minggu</span>. Slot Minggu jam 09.00 & 16.00 paling cepat penuh di Galuh Mas & Resinda, jadi usahakan WA H-1. Kalau malam, terakhir jam 19.00 mulai pengerjaan.
-            </div>
-          </div>
-        </div>
-        <!-- 7 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Skema harganya gimana? Ada biaya datang?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Harga per unit transparan: Hemat 75rb, Lengkap 95rb, Keluarga 3 AC 275rb / 4 AC 350rb. <span class="font-semibold text-ink">Tanpa biaya datang</span> untuk area cover (Karawang Barat/Timur, Telukjambe, Klari, Cikampek, Purwasari, Kosambi). Luar area, tanya WA dulu — biasanya tetap bisa, ongkos menyesuaikan jarak.
-            </div>
-          </div>
-        </div>
-        <!-- 8 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Merek AC apa saja yang dilayani?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Semua AC rumahan split ½ – 2 PK: <span class="font-semibold text-ink">Daikin, Panasonic, LG, Sharp, Samsung, Gree, Midea, Polytron, Mitsubishi, Changhong</span>. Baik yang standard maupun low watt & inverter. Untuk AC cassette / standing floor, WA dulu ya.
-            </div>
-          </div>
-        </div>
-        <!-- 9 -->
-        <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden reveal">
-          <button class="faq-toggle w-full flex items-center justify-between gap-4 px-5 py-4 text-left">
-            <span class="font-bold text-ink text-sm md:text-[15px]">Kalau AC sudah nggak dingin sama sekali, tetap bisa dicuci?</span>
-            <span class="faq-icon w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span>
-          </button>
-          <div class="faq-content">
-            <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-              Bisa, tapi kami <span class="font-semibold text-ink">cek dulu penyebabnya</span>. Kalau cuma debu tebal, cuci Lengkap biasanya langsung dingin lagi. Kalau freon bocor besar atau kapasitor lemah, kami infokan jujur opsi perbaikannya & biayanya sebelum cuci — jadi Anda bisa putuskan mau cuci dulu atau perbaiki dulu. Nggak main cuci aja.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-6 bg-white rounded-2xl border border-slate-200 p-5 flex flex-col md:flex-row gap-4 items-center justify-between reveal">
-        <div class="flex gap-3">
-          <div class="w-10 h-10 rounded-xl bg-ink text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-comments"></i></div>
-          <div>
-            <div class="font-bold text-ink">Masih ada yang mau ditanya?</div>
-            <div class="text-sm text-slate-600">Tanya langsung di WA, kami jawab pakai bahasa santai — nggak pakai template bot.</div>
-          </div>
-        </div>
-        <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20tanya%20dulu%20sebelum%20booking%20..." target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-white font-bold hover:bg-accentHover transition">Tanya di WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+  <!-- FAQ SINGKAT -->
+  <section id="faq" class="py-10 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-[860px] mx-auto px-4 md:px-6">
+      <h2 class="font-display text-2xl font-bold text-ink text-center">FAQ singkat</h2>
+      <div class="mt-6 space-y-2">
+        <div class="faq-item open bg-white rounded-2xl border border-slate-200"><button class="faq-toggle w-full flex justify-between items-center px-4 py-3 font-bold text-sm">Berapa sering cuci AC? <span class="faq-icon w-7 h-7 rounded-full bg-ink text-white grid place-items-center text-xs"><i class="fa-solid fa-chevron-down"></i></span></button><div class="faq-content"><div class="px-4 pb-3 text-sm text-slate-600">Tiap 4 bulan kalau pakai harian, 6 bulan kalau jarang. Debu Karawang tebal jadi 4 bulan paling pas.</div></div></div>
+        <div class="faq-item bg-white rounded-2xl border border-slate-200"><button class="faq-toggle w-full flex justify-between items-center px-4 py-3 font-bold text-sm">Tiap cuci harus isi freon? <span class="faq-icon w-7 h-7 rounded-full bg-slate-100 grid place-items-center text-xs"><i class="fa-solid fa-chevron-down"></i></span></button><div class="faq-content"><div class="px-4 pb-3 text-sm text-slate-600">Tidak. Kami cek dulu 140–160 psi. Aman = nggak perlu isi.</div></div></div>
+        <div class="faq-item bg-white rounded-2xl border border-slate-200"><button class="faq-toggle w-full flex justify-between items-center px-4 py-3 font-bold text-sm">Berapa lama & berantakan? <span class="faq-icon w-7 h-7 rounded-full bg-slate-100 grid place-items-center text-xs"><i class="fa-solid fa-chevron-down"></i></span></button><div class="faq-content"><div class="px-4 pb-3 text-sm text-slate-600">30–60 menit/unit. Pakai cover + dipel lagi, nggak berantakan.</div></div></div>
+        <div class="faq-item bg-white rounded-2xl border border-slate-200"><button class="faq-toggle w-full flex justify-between items-center px-4 py-3 font-bold text-sm">Ada garansi? <span class="faq-icon w-7 h-7 rounded-full bg-slate-100 grid place-items-center text-xs"><i class="fa-solid fa-chevron-down"></i></span></button><div class="faq-content"><div class="px-4 pb-3 text-sm text-slate-600">Garansi 7 hari untuk Paket Lengkap. Netes lagi = balik gratis.</div></div></div>
+        <div class="faq-item bg-white rounded-2xl border border-slate-200"><button class="faq-toggle w-full flex justify-between items-center px-4 py-3 font-bold text-sm">Merek apa saja? <span class="faq-icon w-7 h-7 rounded-full bg-slate-100 grid place-items-center text-xs"><i class="fa-solid fa-chevron-down"></i></span></button><div class="faq-content"><div class="px-4 pb-3 text-sm text-slate-600">Daikin, Panasonic, LG, Sharp, Samsung, Gree, Midea, dll ½–2 PK.</div></div></div>
+        <div class="faq-item bg-white rounded-2xl border border-slate-200"><button class="faq-toggle w-full flex justify-between items-center px-4 py-3 font-bold text-sm">Bisa Minggu/malam? <span class="faq-icon w-7 h-7 rounded-full bg-slate-100 grid place-items-center text-xs"><i class="fa-solid fa-chevron-down"></i></span></button><div class="faq-content"><div class="px-4 pb-3 text-sm text-slate-600">Bisa 08.00–20.00 tiap hari. Minggu cepat penuh, WA H-1.</div></div></div>
       </div>
     </div>
   </section>
 
-  <!-- FINAL CTA + FOOTER -->
   <footer class="bg-ink text-white">
-    <div class="max-w-[1220px] mx-auto px-4 md:px-6">
-      <div class="py-10 md:py-12 grid lg:grid-cols-[1.2fr_.8fr] gap-8 items-center border-b border-white/10">
-        <div>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-white text-ink flex items-center justify-center"><i class="fa-regular fa-snowflake"></i></div>
-            <div>
-              <div class="font-display font-bold tracking-tight">KARAWANG SEJUK</div>
-              <div class="text-xs tracking-widest text-white/60">SPESIALIS AC RUMAHAN • KARAWANG</div>
-            </div>
-          </div>
-          <h3 class="font-display text-[28px] md:text-[32px] font-bold leading-tight mt-5">AC Rumah Kembali Dingin,<br>Rumah Tetap Bersih. Itu Janji Kami.</h3>
-          <p class="text-white/70 text-sm md:text-[15px] leading-relaxed mt-3 max-w-[560px]">Melayani 300+ unit AC rumahan di Karawang Barat/Timur, Telukjambe, Klari, Cikampek. Harga jujur di awal, kerja rapi, garansi 7 hari.</p>
-          <div class="flex flex-wrap gap-2 mt-5">
-            <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20saya%20mau%20booking%20cuci%20AC%20..." target="_blank" data-cta="footer_wa" class="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-accent hover:bg-accentHover text-white font-extrabold">Chat WhatsApp Sekarang <i class="fa-brands fa-whatsapp text-lg"></i></a>
-            <a href="tel:+6281223456789" class="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white text-ink font-extrabold"><i class="fa-solid fa-phone"></i> Telepon</a>
-          </div>
-          <div class="flex flex-wrap gap-2 mt-3 text-xs font-semibold text-white/70">
-            <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/15">Buka 08.00–20.00 • Minggu buka</span>
-            <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/15">Respon WA &lt;30 menit</span>
-          </div>
-        </div>
-        <div class="bg-white rounded-[22px] p-6 text-slate-800">
-          <div class="font-bold text-ink">Kontak & Area</div>
-          <div class="mt-3 space-y-2.5 text-sm">
-            <div class="flex gap-2.5"><i class="fa-brands fa-whatsapp text-emerald-500 mt-0.5"></i><span><span class="font-semibold">WhatsApp:</span> 0812-2345-6789 <span class="text-slate-500">(klik tombol WA ada pesan otomatis)</span></span></div>
-            <div class="flex gap-2.5"><i class="fa-solid fa-phone text-cyanbrand mt-0.5"></i><span><span class="font-semibold">Telepon:</span> 0812-2345-6789</span></div>
-            <div class="flex gap-2.5"><i class="fa-solid fa-location-dot text-amber-500 mt-0.5"></i><span><span class="font-semibold">Cover:</span> Karawang Barat, Karawang Timur, Telukjambe Barat/Timur, Klari, Cikampek, Purwasari, Kosambi, Kotabaru</span></div>
-            <div class="flex gap-2.5"><i class="fa-solid fa-clock text-slate-500 mt-0.5"></i><span><span class="font-semibold">Jam:</span> 08.00–20.00 tiap hari</span></div>
-          </div>
-          <div class="mt-4 flex flex-wrap gap-2 text-xs">
-            <span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Daikin</span><span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Panasonic</span><span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">LG</span><span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Sharp</span><span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Samsung</span><span class="px-2.5 py-1 rounded-full bg-slate-50 border border-slate-200">Gree</span>
-          </div>
-          <div class="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs leading-relaxed text-amber-800">
-            <span class="font-bold">Catatan:</span> Ganti nomor WA & alamat di file ini dengan nomor asli Anda. Pesan WA otomatis bisa diedit di link wa.me.
-          </div>
-        </div>
+    <div class="max-w-[1160px] mx-auto px-4 md:px-6 py-8 flex flex-col md:flex-row gap-6 justify-between">
+      <div>
+        <div class="font-display font-bold">KARAWANG SEJUK</div><div class="text-xs opacity-60">Spesialis AC Rumahan • Karawang</div>
+        <p class="text-sm opacity-70 mt-2 max-w-md">300+ unit ditangani. Harga jujur, kerja bersih, garansi 7 hari.</p>
+        <div class="flex gap-2 mt-4"><a href="https://wa.me/6281223456789?text=Halo%20mau%20booking%20AC" target="_blank" class="px-6 py-3 rounded-full bg-accent font-extrabold">Chat WA</a><a href="tel:+6281223456789" class="px-6 py-3 rounded-full bg-white text-ink font-extrabold">Telepon</a></div>
       </div>
-      <div class="py-6 flex flex-col md:flex-row gap-3 justify-between items-center text-xs text-white/60">
-        <div>© <span id="year"></span> Karawang Sejuk • Spesialis Servis & Cuci AC Rumahan di Karawang. Bukan “tukang panggilan” — tapi partner AC rumah Anda.</div>
-        <div class="flex gap-4">
-          <a href="#" class="hover:text-white">Kebijakan Privasi</a>
-          <a href="#" class="hover:text-white">Syarat Layanan</a>
-          <span class="hidden md:inline">Made with care in Karawang</span>
-        </div>
+      <div class="bg-white text-ink rounded-2xl p-4 text-sm">
+        <div class="font-bold">Kontak</div>
+        <div class="mt-2 space-y-1 text-xs"><div>WA: 0812-2345-6789</div><div>Jam: 08.00–20.00 tiap hari</div><div>Cover: Karawang Barat/Timur, Telukjambe, Klari, Cikampek</div></div>
       </div>
     </div>
+    <div class="border-t border-white/10 text-center text-xs opacity-60 py-4">© <span id="year"></span> Karawang Sejuk • Ganti nomor WA di file dengan nomor asli</div>
   </footer>
 
-  <!-- Sticky WA Mobile -->
-  <div class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 p-3 flex gap-2">
-    <a href="tel:+6281223456789" class="flex-1 inline-flex items-center justify-center gap-2 py-3.5 rounded-full border border-slate-300 font-bold text-ink"><i class="fa-solid fa-phone text-cyanbrand"></i> Telepon</a>
-    <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20mau%20booking%20cuci%20AC%20di%20..." target="_blank" data-cta="sticky_wa" class="flex-[1.4] inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold shadow-lg"><i class="fa-brands fa-whatsapp text-lg"></i> Chat WhatsApp</a>
-  </div>
-  <!-- Desktop floating WA -->
-  <a href="https://wa.me/6281223456789?text=Halo%20Karawang%20Sejuk%2C%20saya%20mau%20tanya%20jadwal%20cuci%20AC%20rumah%20di%20..." target="_blank" data-cta="floating_wa" class="hidden lg:flex fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#25D366] text-white rounded-full items-center justify-center shadow-xl hover:scale-105 transition">
-    <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-30 animate-ping"></span>
-    <i class="fa-brands fa-whatsapp text-[30px] relative"></i>
-  </a>
+  <div class="lg:hidden fixed bottom-0 inset-x-0 bg-white border-t p-2 flex gap-2 z-40"><a href="tel:+6281223456789" class="flex-1 py-3 rounded-full border font-bold text-center">Telepon</a><a href="https://wa.me/6281223456789?text=Halo%20mau%20booking%20AC" target="_blank" class="flex-[1.4] py-3 rounded-full bg-emerald-500 text-white font-extrabold text-center">Chat WA</a></div>
+  <a href="https://wa.me/6281223456789?text=Halo%20mau%20booking%20AC" target="_blank" class="hidden lg:flex fixed bottom-5 right-5 w-12 h-12 bg-[#25D366] text-white rounded-full items-center justify-center shadow-xl"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
 
   <script>
-    // year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // mobile nav
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileNav = document.getElementById('mobileNav');
-    let menuOpen = false;
-    menuBtn?.addEventListener('click', () => {
-      menuOpen = !menuOpen;
-      mobileNav.classList.toggle('hidden', !menuOpen);
-      menuBtn.innerHTML = menuOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-    });
-    mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      menuOpen = false;
-      mobileNav.classList.add('hidden');
-      menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('menuBtn')?.addEventListener('click',()=>document.getElementById('mobileNav').classList.toggle('hidden'));
+    new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('is-visible')}),{threshold:.15}).observe;
+    document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');o.unobserve(e.target)}})},{threshold:.15}).observe(el));
+    document.querySelectorAll('.faq-toggle').forEach(b=>b.addEventListener('click',()=>{
+      const p=b.closest('.faq-item'),o=p.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-icon').className='faq-icon w-7 h-7 rounded-full bg-slate-100 grid place-items-center text-xs'});
+      if(!o){p.classList.add('open');p.querySelector('.faq-icon').className='faq-icon w-7 h-7 rounded-full bg-ink text-white grid place-items-center text-xs'}
     }));
-
-    // reveal on scroll
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }
-      });
-    },{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-    // FAQ accordion
-    document.querySelectorAll('.faq-item .faq-toggle').forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i=>{
-          i.classList.remove('open');
-          i.querySelector('.faq-icon')?.classList.remove('bg-slate-900','text-white');
-          i.querySelector('.faq-icon')?.classList.add('bg-slate-100');
-        });
-        if(!isOpen){
-          item.classList.add('open');
-          item.querySelector('.faq-icon')?.classList.remove('bg-slate-100');
-          item.querySelector('.faq-icon')?.classList.add('bg-slate-900','text-white');
-        }
-      });
+    document.getElementById('leadForm')?.addEventListener('submit',e=>{
+      e.preventDefault();const d=new FormData(e.target);
+      const m=`Halo Karawang Sejuk, mau booking.%0ANama: ${encodeURIComponent(d.get('nama'))}%0AWa: ${encodeURIComponent(d.get('wa'))}%0AAlamat: ${encodeURIComponent(d.get('alamat'))}%0AJumlah: ${encodeURIComponent(d.get('jumlah'))}%0APaket: ${encodeURIComponent(d.get('paket'))}`;
+      open(`https://wa.me/6281223456789?text=${m}`,'_blank');
     });
-
-    // lead form -> WA
-    const form = document.getElementById('leadForm');
-    form?.addEventListener('submit', (e)=>{
-      e.preventDefault();
-      const fd = new FormData(form);
-      const nama = fd.get('nama')?.toString().trim() || '-';
-      const wa = fd.get('wa')?.toString().trim() || '-';
-      const alamat = fd.get('alamat')?.toString().trim() || '-';
-      const jumlah = fd.get('jumlah')?.toString().trim() || '-';
-      const paket = fd.get('paket')?.toString().trim() || '-';
-      const keluhan = fd.get('keluhan')?.toString().trim() || '-';
-      const msg = `Halo Karawang Sejuk, saya mau booking servis AC rumah.%0A`+
-                  `Nama: ${encodeURIComponent(nama)}%0A`+
-                  `No WA: ${encodeURIComponent(wa)}%0A`+
-                  `Alamat: ${encodeURIComponent(alamat)}%0A`+
-                  `Jumlah AC: ${encodeURIComponent(jumlah)}%0A`+
-                  `Paket: ${encodeURIComponent(paket)}%0A`+
-                  `Keluhan: ${encodeURIComponent(keluhan)}%0A`+
-                  `Mohon info slot terdekat ya kak.`;
-      // tracking
-      track('lead_form_submit');
-      window.open(`https://wa.me/6281223456789?text=${msg}`, '_blank');
-    });
-
-    // tracking clicks
-    function track(eventName){
-      // GA4 placeholder
-      if(window.gtag) gtag('event', eventName);
-      // Meta Pixel placeholder
-      if(window.fbq) fbq('trackCustom', eventName);
-      console.log('[track]', eventName);
-    }
-    document.querySelectorAll('[data-cta]').forEach(el=>{
-      el.addEventListener('click', ()=> track('click_'+el.getAttribute('data-cta')));
-    });
-
-    // sticky navbar shadow on scroll
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', ()=>{
-      if(window.scrollY > 10) navbar.classList.add('shadow-sm');
-      else navbar.classList.remove('shadow-sm');
-    });
-
-    // prefilled helper - if user lands with ?paket= etc
-    const params = new URLSearchParams(location.search);
-    if(params.get('utm_source')) track('visit_'+params.get('utm_source'));
   </script>
 </body>
 </html>
